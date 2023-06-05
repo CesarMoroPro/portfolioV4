@@ -180,6 +180,9 @@
   .body .general-header__highline__nav__links__link {
     font-size: 1.5rem;
   }
+  .body .general-header__subtitle .separator-horizontal {
+    margin: 1.5rem 0;
+  }
 }
 @media all and (min-width: 768px) {
   .body .general-header__highline__id {
@@ -221,7 +224,10 @@
     left: -5px;
   }
   .body .general-header__subtitle h2 {
-    font-size: 1.5rem;
+    font-size: 1.5rem 0;
+  }
+  .body .general-header__subtitle .separator-horizontal {
+    margin: 2rem;
   }
 }
 @media all and (min-width: 1024px) {
@@ -266,8 +272,14 @@
     top: 80px;
     left: -30px;
   }
+  .body .general-header__subtitle {
+    margin: 7.5rem 0;
+  }
   .body .general-header__subtitle h2 {
     font-size: 2rem;
+  }
+  .body .general-header__subtitle .separator-horizontal {
+    margin: 5rem 0;
   }
 }
 
