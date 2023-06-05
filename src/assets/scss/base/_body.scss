@@ -1,7 +1,23 @@
-body {
+.body {
         padding: 5px;
+        background-color: $bg-color;
+
+        h1, h2, h3 {
+                font-family: $font-titles;
+        }
 
         h1 {
-                font-size: 32px;
+                .id-name {
+                        font-size: $font-size-very-large;
+                }
+
+                .id-firstname {
+                        font-size: $font-size-ultra-large * 2;
+                }
+
+                .id-speciality {
+                        font-size: $font-size-regular;
+                        line-height: $gutter-large;
+                }
         }
 }

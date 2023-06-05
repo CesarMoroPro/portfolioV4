@@ -1,8 +1,75 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Castoro&display=swap");
+.body {
   padding: 5px;
+  background-color: #efefef;
 }
-body h1 {
-  font-size: 32px;
+.body h1, .body h2, .body h3 {
+  font-family: "Castoro", serif;
+}
+.body h1 .id-name {
+  font-size: 2em;
+}
+.body h1 .id-firstname {
+  font-size: 6em;
+}
+.body h1 .id-speciality {
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
+.body .general-header__logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.body .general-header__logo__big-circle {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 300px;
+  height: 300px;
+  background-color: transparent;
+  border: solid 1px red;
+  border-radius: 180px;
+}
+.body .general-header__logo__sun-moon {
+  height: 180px;
+  width: 180px;
+  background-image: linear-gradient(to right, #d2420f, #d64e0f, #d9590f, #dd6311, #e06d13, #e07619, #e17e1f, #e18626, #df8e31, #dd963c, #db9e47, #daa552);
+  border-radius: 180px;
+  position: absolute;
+  top: 30px;
+  left: 20%;
+}
+.body .general-header__logo__parapente {
+  height: 60px;
+  width: 60px;
+  border-radius: 180px;
+  position: absolute;
+  top: 45px;
+  left: 100px;
+}
+.body .general-header__logo__mountain {
+  height: 270px;
+  width: 270px;
+  border-radius: 180px;
+  position: absolute;
+  top: 45px;
+  left: 20px;
+}
+.body .general-header__logo__img {
+  width: 40%;
+}
+.body .general-header__logo__title {
+  text-align: center;
+  /*
+          voir _body.scss
+  */
+}
+.body .general-header__nav {
+  margin-top: 1.5em;
+  text-align: center;
 }
 
 /*# sourceMappingURL=main.css.map */
