@@ -1,0 +1,27 @@
+.body {
+
+        .general-section {
+
+                .general-h2 {
+                        font-family: $font-secondary;
+                        font-size: $font-size-large;
+                        margin: $gutter-large $gutter-regular;
+                        color: $orange-dark;
+                        cursor: pointer;
+                }
+
+                .general-about {
+
+                        &__texts {
+                                .general-texts {
+                                        line-height: $gutter-large;
+                                        margin: $gutter-regular $gutter-medium;
+                                        text-align: justify;
+                                }
+                        }
+                        
+        
+                }
+
+        }
+}

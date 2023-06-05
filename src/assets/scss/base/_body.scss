@@ -2,16 +2,32 @@
         padding: 5px;
         background-color: $bg-color;
         min-width: 285px;
-
-        h1, h2, h3 {
-                font-family: $font-main;
-        }
-
-        a {
-                font-family: $font-secondary;
-        }
+        font-family: $font-main;
 
         .icon {
                 color: $orange-light;
         }
+
+        /* Classes générales */
+        .link-white {
+                color: $pur-white;
+        }
+
+        .link-white:hover {
+                text-decoration: none;
+                color: $orange-dark;
+        }
+        
+        .link-background-orange {
+                background-image: $gradient-sunshine;
+        }
+
+        .link-background-orange:hover {
+                background-image: none;
+        }
+
+        .underline-orange {
+                text-decoration: underline $orange-light;
+        }
+        
 }

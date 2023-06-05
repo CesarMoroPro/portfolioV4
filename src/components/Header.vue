@@ -31,8 +31,6 @@
                                 Développeur Web et Web Mobile<br>
                                 JavaScript - Vue.js 3
                         </h2>
-
-                        <div class="separator-horizontal"></div>
                 </div>
 
         </header>
@@ -58,14 +56,6 @@ export default {
                         /* Autres data */
                 }
         },
-
-        computed: {
-                
-        },
-
-        methods: {
-                
-                }
 }
 
 </script>

@@ -94,18 +94,7 @@
                         &__qualification {
                                 text-align: center;
                                 font-family: $font-main;
-                        }
-
-                        .separator-horizontal { /* Le séparateur apparaît en 1 seconde, 0.5 secondes la fin du vol en parapente à T+5secondes */
-                                height: 2px;
-                                background-image: $gradient-sunshine;
-                                border-radius: 5px;
-                                margin: $gutter-regular 0;
-                                opacity: 0; /* opacity finale fournie par l'animation */
-                                width: 1%; /* width finale fournie par l'animation */
-
-                                animation: separatorHorizontal 1s 4.5s ease-in-out forwards; /* Fowards = empêche de retourner à l'état initial */
-                        }
+                        }                    
                 }
         }
 }
