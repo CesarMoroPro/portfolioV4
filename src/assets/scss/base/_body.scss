@@ -1,6 +1,7 @@
 .body {
         padding: 5px;
         background-color: $bg-color;
+        min-width: 285px;
 
         h1, h2, h3, a {
                 font-family: $font-titles;

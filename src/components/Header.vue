@@ -7,13 +7,13 @@
                         
         
                         <nav class="general-header__highline__nav">
-                                <div v-show="mediaQueryMobile">
+                                <!-- <div v-show="mediaQueryMobile" @click="toogleMenu">
                                         <font-awesome-icon class="icon general-highline__nav__menu-icon" :icon="['fas', 'bars']" size="xl"/>
-                                </div>
-                                <div class="general-header__highline__nav__links" v-show="!mediaQueryMobile">
-                                        <a class="general-header__highline__nav__links__link">About me</a>
-                                        <a class="general-header__highline__nav__links__link">My skills</a>
-                                        <a class="general-header__highline__nav__links__link">My projects</a>
+                                </div> -->
+                                <div class="general-header__highline__nav__links">
+                                        <a class="general-header__highline__nav__links__link">About</a>
+                                        <a class="general-header__highline__nav__links__link">Skills</a>
+                                        <a class="general-header__highline__nav__links__link">Projects</a>
                                 </div>
                         </nav>
                 </div>
@@ -51,14 +51,12 @@ export default {
         },
 
         computed: {
-                mediaQueryMobile() {
-                        if(window.innerWidth < 768) { /* En SCSS, $mobile-max = 767px */
-                               return true;
-                        } else {
-                                return false;
-                        }
-                }
+                
         },
+
+        methods: {
+                
+                }
 }
 
 </script>

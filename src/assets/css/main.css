@@ -17,6 +17,7 @@
 .body {
   padding: 5px;
   background-color: #efefef;
+  min-width: 285px;
 }
 .body h1, .body h2, .body h3, .body a {
   font-family: "Tsukimi Rounded", sans-serif;
@@ -26,27 +27,32 @@
 }
 
 .body .general-header__highline {
-  width: 100%;
   margin: 0.75rem 0.5rem;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 .body .general-header__highline__id {
+  font-size: 1.25rem;
+  margin: 0.75rem 0;
   text-transform: uppercase;
-  font-size: 1.5rem;
-  margin-right: 1rem;
+}
+.body .general-header__highline__nav {
+  width: 100%;
 }
 .body .general-header__highline__nav__links {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 .body .general-header__highline__nav__links__link {
   color: #E47A18;
+  font-size: 1rem;
   text-decoration: underline;
   cursor: pointer;
+  margin: 0.25rem 0;
 }
 .body .general-header__highline__nav__links__link:hover {
   color: #DAA552;
@@ -92,25 +98,18 @@
   top: 45px;
   left: 20px;
 }
-@media screen and (min-width: 768px) {
-  .body .general-header .general-header__highline {
-    display: flex;
-    flex-direction: column;
-  }
-  .body .general-header .general-header__highline__id {
-    width: 100%;
-    text-align: center;
-    margin: 1rem 0;
+
+@media all and (min-width: 420px) {
+  .body .general-header__highline__id {
     font-size: 2rem;
   }
-  .body .general-header .general-header__highline__nav {
-    width: 80%;
-  }
-  .body .general-header .general-header__highline__nav__links {
+  .body .general-header__highline__nav__links {
+    display: flex;
+    flex-direction: row;
     justify-content: space-around;
   }
-  .body .general-header .general-header__highline__nav__links__link {
-    font-size: 1.5rem;
+  .body .general-header__highline__nav__links__link {
+    font-size: 1.25rem;
   }
 }
 

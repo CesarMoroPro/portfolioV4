@@ -9,10 +9,10 @@ $font-main: 'Quicksand', sans-serif;
 //^ FONT SIZES
 $font-size-small: 0.5rem;
 $font-size-regular: 1rem;
-$font-size-large: 1.5rem;
-$font-size-very-large: 2rem;
-$font-size-extra-large: 2.5rem;
-$font-size-ultra-large: 3rem;
+$font-size-large: 1.25rem;
+$font-size-very-large: 1.5rem;
+$font-size-extra-large: 2rem;
+$font-size-ultra-large: 2.5rem;
 
 //^ COLORS
 $bg-color: #efefef;
@@ -21,6 +21,7 @@ $orange-dark: #D2420F;
 $gold: #DAA552;
 
 //^ GUTTER-SIZES
+$gutter-very-small: 0.25rem;
 $gutter-small: 0.5rem;
 $gutter-medium: 0.75rem;
 $gutter-regular: 1rem;
