@@ -52,7 +52,6 @@
                                 width: 300px;
                                 height: 300px;
                                 background-color: transparent;
-                                border-radius: 180px;
                         }
 
                         &__sun-moon {
@@ -73,7 +72,7 @@
                                 top: 50px;
                                 left: 85px;
 
-                                animation: parapente 5s linear forwards;
+                                animation: parapenteSmall 5s linear forwards;
                         }
 
                         &__mountain {
@@ -111,6 +110,161 @@
                                                         font-size: $font-size-large;
                                                 }
                                         }
+                                }
+                        }
+                }
+        }
+}
+
+//= LARGEUR MINIMUM 600 px
+@media all and (min-width: 600px) {
+        .body {
+                
+                .general-header {
+        
+                        &__highline {
+
+                                &__id {
+                                        font-size: $font-size-ultra-large;
+                                }
+        
+                                &__nav {
+                                                
+                                        &__links {
+
+                                                &__link {
+                                                        font-size: $font-size-very-large;
+                                                }
+                                        }
+                                }
+                        }
+                }
+        }
+}
+
+//= LARGEUR MINIMUM TABLET
+@media all and (min-width: ($mobile-max + 1)) {
+        .body {
+                
+                .general-header {
+        
+                        &__highline {
+
+                                &__id {
+                                        font-size: $font-size-ultra-large * 1.2;
+                                }
+        
+                                &__nav {
+                                                
+                                        &__links {
+
+                                                &__link {
+                                                        font-size: $font-size-extra-large;
+                                                }
+                                        }
+                                }
+                        }
+
+                        &__logo {
+        
+                                &__big-circle {
+
+                                        width: 300px;
+                                        height: 300px;
+                                }
+        
+                                &__sun-moon {
+                                        height: 220px;
+                                        width: 220px;
+                                        border-radius: 180px;
+                                        position: absolute;
+                                        top: 30px;
+                                        left: 13%;
+                                }
+        
+                                &__parapente {
+                                        height: 60px;
+                                        width: 60px;
+                                        border-radius: 180px;
+                                        position: absolute;
+                                        top: 45px;
+                                        left: 80px;
+        
+                                        animation: parapenteTablet 5s linear forwards;
+                                }
+        
+                                &__mountain {
+                                        height: 310px;
+                                        width: 310px;
+                                        border-radius: 180px;
+                                        position: absolute;
+                                        top: 75px;
+                                        left: -5px;
+                                }
+                        }
+                }
+        }
+}
+
+//= LARGEUR MINIMUM DESKTOP
+@media all and (min-width: ($tablet-max + 1)) {
+        .body {
+                
+                .general-header {
+        
+                        &__highline {
+
+                                &__id {
+                                        font-size: $font-size-ultra-large * 1.2;
+                                }
+        
+                                &__nav {
+                                                
+                                        &__links {
+
+                                                &__link {
+                                                        font-size: $font-size-extra-large;
+                                                }
+                                        }
+                                }
+                        }
+
+                        &__logo {
+        
+                                &__big-circle {
+
+                                        width: 300px;
+                                        height: 300px;
+                                        border: solid 1px red;
+                                }
+        
+                                &__sun-moon {
+                                        height: 260px;
+                                        width: 260px;
+                                        border-radius: 180px;
+                                        position: absolute;
+                                        top: 10px;
+                                        left: 7%;
+                                }
+        
+                                &__parapente {
+                                        height: 70px;
+                                        width: 70px;
+                                        border-radius: 180px;
+                                        position: absolute;
+                                        top: 40px;
+                                        left: 50px;
+        
+                                        animation: parapenteDesktop 5s linear forwards;
+                                }
+        
+                                &__mountain {
+                                        height: 350px;
+                                        width: 350px;
+                                        border-radius: 180px;
+                                        position: absolute;
+                                        top: 80px;
+                                        left: -30px;
                                 }
                         }
                 }

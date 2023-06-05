@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Tsukimi+Rounded&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap");
-@keyframes parapente {
+@keyframes parapenteSmall {
   0% {
     height: 40px;
     width: 40px;
@@ -12,6 +12,34 @@
     left: 140px;
     height: 70px;
     width: 70px;
+  }
+}
+@keyframes parapenteTablet {
+  0% {
+    height: 60px;
+    width: 60px;
+    top: 45px;
+    left: 80px;
+  }
+  100% {
+    top: 50px;
+    left: 140px;
+    height: 90px;
+    width: 90px;
+  }
+}
+@keyframes parapenteDesktop {
+  0% {
+    height: 70px;
+    width: 70px;
+    top: 40px;
+    left: 50px;
+  }
+  100% {
+    height: 120px;
+    width: 120px;
+    top: 55px;
+    left: 155px;
   }
 }
 .body {
@@ -70,7 +98,6 @@
   width: 300px;
   height: 300px;
   background-color: transparent;
-  border-radius: 180px;
 }
 .body .general-header__logo__sun-moon {
   height: 180px;
@@ -88,7 +115,7 @@
   position: absolute;
   top: 50px;
   left: 85px;
-  animation: parapente 5s linear forwards;
+  animation: parapenteSmall 5s linear forwards;
 }
 .body .general-header__logo__mountain {
   height: 270px;
@@ -110,6 +137,89 @@
   }
   .body .general-header__highline__nav__links__link {
     font-size: 1.25rem;
+  }
+}
+@media all and (min-width: 600px) {
+  .body .general-header__highline__id {
+    font-size: 2.5rem;
+  }
+  .body .general-header__highline__nav__links__link {
+    font-size: 1.5rem;
+  }
+}
+@media all and (min-width: 768px) {
+  .body .general-header__highline__id {
+    font-size: 3rem;
+  }
+  .body .general-header__highline__nav__links__link {
+    font-size: 2rem;
+  }
+  .body .general-header__logo__big-circle {
+    width: 300px;
+    height: 300px;
+  }
+  .body .general-header__logo__sun-moon {
+    height: 220px;
+    width: 220px;
+    border-radius: 180px;
+    position: absolute;
+    top: 30px;
+    left: 13%;
+  }
+  .body .general-header__logo__parapente {
+    height: 60px;
+    width: 60px;
+    border-radius: 180px;
+    position: absolute;
+    top: 45px;
+    left: 80px;
+    animation: parapenteTablet 5s linear forwards;
+  }
+  .body .general-header__logo__mountain {
+    height: 310px;
+    width: 310px;
+    border-radius: 180px;
+    position: absolute;
+    top: 75px;
+    left: -5px;
+  }
+}
+@media all and (min-width: 1024px) {
+  .body .general-header__highline__id {
+    font-size: 3rem;
+  }
+  .body .general-header__highline__nav__links__link {
+    font-size: 2rem;
+  }
+  .body .general-header__logo__big-circle {
+    width: 300px;
+    height: 300px;
+    border: solid 1px red;
+  }
+  .body .general-header__logo__sun-moon {
+    height: 260px;
+    width: 260px;
+    border-radius: 180px;
+    position: absolute;
+    top: 10px;
+    left: 7%;
+  }
+  .body .general-header__logo__parapente {
+    height: 70px;
+    width: 70px;
+    border-radius: 180px;
+    position: absolute;
+    top: 40px;
+    left: 50px;
+    animation: parapenteDesktop 5s linear forwards;
+  }
+  .body .general-header__logo__mountain {
+    height: 350px;
+    width: 350px;
+    border-radius: 180px;
+    position: absolute;
+    top: 80px;
+    left: -30px;
   }
 }
 

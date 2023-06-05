@@ -1,4 +1,4 @@
-@keyframes parapente {
+@keyframes parapenteSmall {
         0% {
                 height: 40px;
                 width: 40px;
@@ -11,5 +11,37 @@
                 left: 140px;
                 height: 70px;
                 width: 70px;
+        }
+}
+
+@keyframes parapenteTablet {
+        0% {
+                height: 60px;
+                width: 60px;
+                top: 45px;
+                left: 80px;
+        }
+
+        100% {
+                top: 50px;
+                left: 140px;
+                height: 90px;
+                width: 90px;
+        }
+}
+
+@keyframes parapenteDesktop {
+        0% {
+                height: 70px;
+                width: 70px;
+                top: 40px;
+                left: 50px;
+        }
+
+        100% {
+                height: 120px;
+                width: 120px;
+                top: 55px;
+                left: 155px;
         }
 }
