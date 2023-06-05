@@ -1,26 +1,59 @@
-@import url("https://fonts.googleapis.com/css2?family=Castoro&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Tsukimi+Rounded&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap");
+@keyframes parapente {
+  0% {
+    height: 40px;
+    width: 40px;
+    top: 50px;
+    left: 85px;
+  }
+  100% {
+    top: 45px;
+    left: 140px;
+    height: 70px;
+    width: 70px;
+  }
+}
 .body {
   padding: 5px;
   background-color: #efefef;
 }
-.body h1, .body h2, .body h3 {
-  font-family: "Castoro", serif;
-}
-.body h1 .id-name {
-  font-size: 2em;
-}
-.body h1 .id-firstname {
-  font-size: 6em;
-}
-.body h1 .id-speciality {
-  font-size: 1em;
-  line-height: 1.5em;
+.body h1, .body h2, .body h3, .body a {
+  font-family: "Tsukimi Rounded", sans-serif;
 }
 
-.body .general-header__logo {
+.body .general-header__highline {
+  margin: 0.75rem 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.body .general-header__highline__id {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  margin-right: 1rem;
+}
+.body .general-header__highline__nav {
+  width: 40%;
+}
+.body .general-header__highline__nav__links {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+.body .general-header__highline__nav__links__link {
+  color: #E47A18;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.body .general-header__highline__nav__links__link:hover {
+  color: #DAA552;
+}
+.body .general-header__logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
 }
 .body .general-header__logo__big-circle {
@@ -30,7 +63,6 @@
   width: 300px;
   height: 300px;
   background-color: transparent;
-  border: solid 1px red;
   border-radius: 180px;
 }
 .body .general-header__logo__sun-moon {
@@ -43,12 +75,13 @@
   left: 20%;
 }
 .body .general-header__logo__parapente {
-  height: 60px;
-  width: 60px;
+  height: 40px;
+  width: 40px;
   border-radius: 180px;
   position: absolute;
-  top: 45px;
-  left: 100px;
+  top: 50px;
+  left: 85px;
+  animation: parapente 5s linear forwards;
 }
 .body .general-header__logo__mountain {
   height: 270px;
@@ -57,19 +90,6 @@
   position: absolute;
   top: 45px;
   left: 20px;
-}
-.body .general-header__logo__img {
-  width: 40%;
-}
-.body .general-header__logo__title {
-  text-align: center;
-  /*
-          voir _body.scss
-  */
-}
-.body .general-header__nav {
-  margin-top: 1.5em;
-  text-align: center;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,15 @@
+@keyframes parapente {
+        0% {
+                height: 40px;
+                width: 40px;
+                top: 50px;
+                left: 85px;
+        }
+
+        100% {
+                top: 45px;
+                left: 140px;
+                height: 70px;
+                width: 70px;
+        }
+}

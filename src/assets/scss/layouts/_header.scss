@@ -1,11 +1,46 @@
 .body {
-
+        
         .general-header {
+
+                &__highline {
+                        margin: $gutter-medium 0;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        align-items: center;
+
+                        &__id {
+                                text-transform: uppercase;
+                                font-size: $font-size-large;
+                                margin-right: $gutter-regular;
+                        }
+
+                        &__nav {
+                                width: 40%;
+
+                                &__links {
+                                        display: flex;
+                                        flex-direction: row;
+                                        justify-content: space-between;
+
+                                        &__link {
+                                                color: $orange-light;
+                                                text-decoration: underline;
+                                                cursor: pointer;
+                                        }
+
+                                        &__link:hover {
+                                                color: $gold;
+                                        }
+                                }
+
+                        }
+                }
 
                 &__logo {
                         display: flex;
                         flex-direction: row;
-                        justify-content: space-between;
+                        justify-content: center;
                         align-items: center;
 
                         &__big-circle {
@@ -15,14 +50,12 @@
                                 width: 300px;
                                 height: 300px;
                                 background-color: transparent;
-                                border: solid 1px red;
                                 border-radius: 180px;
                         }
 
                         &__sun-moon {
                                 height: 180px;
                                 width: 180px;
-                                // background-color: orange;
                                 background-image: linear-gradient(to right, #d2420f, #d64e0f, #d9590f, #dd6311, #e06d13, #e07619, #e17e1f, #e18626, #df8e31, #dd963c, #db9e47, #daa552);
                                 border-radius: 180px;
                                 position: absolute;
@@ -31,12 +64,14 @@
                         }
 
                         &__parapente {
-                                height: 60px;
-                                width: 60px;
+                                height: 40px;
+                                width: 40px;
                                 border-radius: 180px;
                                 position: absolute;
-                                top: 45px;
-                                left: 100px;
+                                top: 50px;
+                                left: 85px;
+
+                                animation: parapente 5s linear forwards;
                         }
 
                         &__mountain {
@@ -47,23 +82,11 @@
                                 top: 45px;
                                 left: 20px;
                         }
-                        
-                        &__img {
-                                width: 40%;
-                        }
-
-                        &__title {
-                                text-align: center;
-
-                                /*
-                                        voir _body.scss
-                                */
-                        }
                 }
 
-                &__nav {
-                        margin-top: $gutter-large;
-                        text-align:center;
+
+                @media all and (min-width: ($mobile-max + 1)) {
+
                 }
         }
 }

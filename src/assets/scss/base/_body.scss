@@ -2,22 +2,7 @@
         padding: 5px;
         background-color: $bg-color;
 
-        h1, h2, h3 {
+        h1, h2, h3, a {
                 font-family: $font-titles;
-        }
-
-        h1 {
-                .id-name {
-                        font-size: $font-size-very-large;
-                }
-
-                .id-firstname {
-                        font-size: $font-size-ultra-large * 2;
-                }
-
-                .id-speciality {
-                        font-size: $font-size-regular;
-                        line-height: $gutter-large;
-                }
         }
 }

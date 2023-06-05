@@ -1,22 +1,30 @@
+//^ MEDIA QUERIES VARIABLES
+$mobile-max: 767px;
+$tablet-max: 1023px;
+
 //^ FONT FAMILY
-$font-titles: 'Castoro', serif;
+$font-titles: 'Tsukimi Rounded', sans-serif;
+$font-main: 'Quicksand', sans-serif;
 
 //^ FONT SIZES
-$font-size-small: 0.5em;
-$font-size-regular: 1em;
-$font-size-large: 1.5em;
-$font-size-very-large: 2em;
-$font-size-extra-large: 2.5em;
-$font-size-ultra-large: 3em;
+$font-size-small: 0.5rem;
+$font-size-regular: 1rem;
+$font-size-large: 1.5rem;
+$font-size-very-large: 2rem;
+$font-size-extra-large: 2.5rem;
+$font-size-ultra-large: 3rem;
 
 //^ COLORS
 $bg-color: #efefef;
+$orange-light: #E47A18;
+$orange-dark: #D2420F;
+$gold: #DAA552;
 
 //^ GUTTER-SIZES
-$gutter-small: 0.5em;
-$gutter-medium: 0.75em;
-$gutter-regular: 1em;
-$gutter-large: 1.5em;
-$gutter-very-large: 2em;
-$gutter-extra-large: 2.5em;
-$guttter-ultra-large: 3em;
+$gutter-small: 0.5rem;
+$gutter-medium: 0.75rem;
+$gutter-regular: 1rem;
+$gutter-large: 1.5rem;
+$gutter-very-large: 2rem;
+$gutter-extra-large: 2.5rem;
+$guttter-ultra-large: 3rem;

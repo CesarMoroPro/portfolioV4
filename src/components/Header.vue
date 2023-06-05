@@ -1,7 +1,24 @@
 <template>
         <header class="general-header">
+                <div class="general-header__highline">
+                        <h1 class="general-header__highline__id">
+                                <span class="id-name">César MORO</span>
+                        </h1>
+                        
+        
+                        <nav class="general-header__highline__nav">
+                                <div v-show="mediaQueryMobile">
+                                        <font-awesome-icon class="icon general-highline__nav__menu-icon" :icon="['fas', 'bars']" size="xl"/>
+                                </div>
+                                <div class="general-header__highline__nav__links" v-show="!mediaQueryMobile">
+                                        <a class="general-header__highline__nav__links__link">About me</a>
+                                        <a class="general-header__highline__nav__links__link">My skills</a>
+                                        <a class="general-header__highline__nav__links__link">My projects</a>
+                                </div>
+                        </nav>
+                </div>
+
                 <div class="general-header__logo">
-                        <!-- <img class="general-header__img-and-title__img" :src=profilPicture alt=""> -->
                         <div class="general-header__logo__big-circle">
                                 <div class="general-header__logo__sun-moon"></div>
                                 <img class="general-header__logo__parapente" :src="parapenteLogo" alt="">
@@ -9,18 +26,6 @@
                         </div>
                 </div>
 
-                <h1 class="general-header__img-and-title__title">
-                        <span class="id-name">MORO</span><br>
-                        <span class="id-firstname">César</span><br>
-                       <span class="id-speciality">Développeur JavaScript<br>
-                                Vue.js 3 - Node.js</span>
-                </h1>
-
-                <nav class="general-header__nav">
-                        <a class="general-header__nav__link">About me</a>
-                        <a class="general-header__nav__link">My skills</a>
-                        <a class="general-header__nav__link">My projects</a>
-                </nav>
         </header>
 </template>
 
@@ -37,9 +42,21 @@ import parapenteLogo from '../assets/img/illustrations/logo-parapente-nobg.png';
 export default {
         data() {
                 return {
+                        /* Images */
                         profilPicture,
                         montainLogo,
                         parapenteLogo,
+                        /* Autres data */
+                }
+        },
+
+        computed: {
+                mediaQueryMobile() {
+                        if(window.innerWidth < 768) {
+                                return true;
+                        } else {
+                                return false;
+                        }
                 }
         },
 }

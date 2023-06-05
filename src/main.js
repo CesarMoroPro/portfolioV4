@@ -15,8 +15,9 @@ import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 /* import specific icons */
 import {  } from '@fortawesome/free-regular-svg-icons';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 /* add icons to the library */
-library.add();
+library.add(faBars);
 
 //? 03 - Création de l'app en passant le root component à la méthode createApp() */
 createApp(App)
