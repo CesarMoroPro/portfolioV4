@@ -3,7 +3,8 @@
         .general-header {
 
                 &__highline {
-                        margin: $gutter-medium 0;
+                        width: 100%;
+                        margin: $gutter-medium $gutter-small;
                         display: flex;
                         flex-direction: row;
                         justify-content: center;
@@ -16,12 +17,11 @@
                         }
 
                         &__nav {
-                                width: 40%;
 
                                 &__links {
                                         display: flex;
                                         flex-direction: row;
-                                        justify-content: space-between;
+                                        justify-content: center;
 
                                         &__link {
                                                 color: $orange-light;
@@ -33,7 +33,6 @@
                                                 color: $gold;
                                         }
                                 }
-
                         }
                 }
 
@@ -84,9 +83,34 @@
                         }
                 }
 
+        @media screen and (min-width: ($mobile-max + 1)) {
+                .general-header {
 
-                @media all and (min-width: ($mobile-max + 1)) {
+                                &__highline {
+                                        display: flex;
+                                        flex-direction: column;
 
+                                        &__id {
+                                                width: 100%;
+                                                text-align: center;
+                                                margin: $gutter-regular 0;
+                                                font-size: $font-size-very-large;
+                                        }
+
+                                        &__nav {
+                                                width: 80%;
+
+                                                &__links {
+                                                        justify-content: space-around;
+
+                                                        &__link {
+                                                                font-size: $font-size-large;
+                                                        }
+                                                }
+                                        }
+                                
+                                }
+                        }
                 }
         }
 }

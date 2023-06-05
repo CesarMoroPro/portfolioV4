@@ -21,9 +21,13 @@
 .body h1, .body h2, .body h3, .body a {
   font-family: "Tsukimi Rounded", sans-serif;
 }
+.body .icon {
+  color: #E47A18;
+}
 
 .body .general-header__highline {
-  margin: 0.75rem 0;
+  width: 100%;
+  margin: 0.75rem 0.5rem;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -34,13 +38,10 @@
   font-size: 1.5rem;
   margin-right: 1rem;
 }
-.body .general-header__highline__nav {
-  width: 40%;
-}
 .body .general-header__highline__nav__links {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
 }
 .body .general-header__highline__nav__links__link {
   color: #E47A18;
@@ -90,6 +91,27 @@
   position: absolute;
   top: 45px;
   left: 20px;
+}
+@media screen and (min-width: 768px) {
+  .body .general-header .general-header__highline {
+    display: flex;
+    flex-direction: column;
+  }
+  .body .general-header .general-header__highline__id {
+    width: 100%;
+    text-align: center;
+    margin: 1rem 0;
+    font-size: 2rem;
+  }
+  .body .general-header .general-header__highline__nav {
+    width: 80%;
+  }
+  .body .general-header .general-header__highline__nav__links {
+    justify-content: space-around;
+  }
+  .body .general-header .general-header__highline__nav__links__link {
+    font-size: 1.5rem;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

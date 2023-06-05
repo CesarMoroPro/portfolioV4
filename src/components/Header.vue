@@ -52,8 +52,8 @@ export default {
 
         computed: {
                 mediaQueryMobile() {
-                        if(window.innerWidth < 768) {
-                                return true;
+                        if(window.innerWidth < 768) { /* En SCSS, $mobile-max = 767px */
+                               return true;
                         } else {
                                 return false;
                         }
