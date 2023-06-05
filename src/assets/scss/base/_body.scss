@@ -3,8 +3,12 @@
         background-color: $bg-color;
         min-width: 285px;
 
-        h1, h2, h3, a {
-                font-family: $font-titles;
+        h1, h2, h3 {
+                font-family: $font-main;
+        }
+
+        a {
+                font-family: $font-secondary;
         }
 
         .icon {

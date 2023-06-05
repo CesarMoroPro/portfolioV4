@@ -58,7 +58,10 @@
   background-color: #efefef;
   min-width: 285px;
 }
-.body h1, .body h2, .body h3, .body a {
+.body h1, .body h2, .body h3 {
+  font-family: "Quicksand", sans-serif;
+}
+.body a {
   font-family: "Tsukimi Rounded", sans-serif;
 }
 .body .icon {
