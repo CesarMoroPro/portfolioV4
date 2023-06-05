@@ -27,7 +27,7 @@
                 </div>
 
                 <div class="general-header__subtitle">
-                        <h2>
+                        <h2 class="general-header__subtitle__qualification">
                                 Développeur Web et Web Mobile<br>
                                 JavaScript - Vue.js 3
                         </h2>
