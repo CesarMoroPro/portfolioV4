@@ -1,6 +1,5 @@
 <template>
         <HeaderComponent></HeaderComponent>
-        <div>coucou</div>
 </template>
 
 <script>

@@ -26,6 +26,15 @@
                         </div>
                 </div>
 
+                <div class="general-header__subtitle">
+                        <h2>
+                                Développeur Web et Web Mobile<br>
+                                JavaScript - Vue.js 3
+                        </h2>
+
+                        <div class="separator-horizontal"></div>
+                </div>
+
         </header>
 </template>
 

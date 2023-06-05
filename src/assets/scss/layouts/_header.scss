@@ -39,7 +39,7 @@
                         }
                 }
 
-                &__logo {
+                &__logo { /* Le parapente vole 5secondes dès le chargement de la page */
                         display: flex;
                         flex-direction: row;
                         justify-content: center;
@@ -57,7 +57,7 @@
                         &__sun-moon {
                                 height: 180px;
                                 width: 180px;
-                                background-image: linear-gradient(to right, #d2420f, #d64e0f, #d9590f, #dd6311, #e06d13, #e07619, #e17e1f, #e18626, #df8e31, #dd963c, #db9e47, #daa552);
+                                background-image: $gradient-sunshine;
                                 border-radius: 180px;
                                 position: absolute;
                                 top: 30px;
@@ -82,6 +82,29 @@
                                 position: absolute;
                                 top: 45px;
                                 left: 20px;
+                        }
+                }
+
+                &__subtitle {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        line-height: $gutter-very-large;
+
+                        h2 {
+                                text-align: center;
+                                font-family: $font-main;
+                        }
+
+                        .separator-horizontal { /* Le séparateur apparaît en 1 seconde, 0.5 secondes la fin du vol en parapente à T+5secondes */
+                                height: 2px;
+                                background-image: $gradient-sunshine;
+                                border-radius: 5px;
+                                margin: $gutter-regular 0;
+                                opacity: 0; /* opacity finale fournie par l'animation */
+                                width: 1%; /* width finale fournie par l'animation */
+
+                                animation: separatorHorizontal 1s 4.5s ease-in-out forwards; /* Fowards = empêche de retourner à l'état initial */
                         }
                 }
         }
@@ -110,6 +133,14 @@
                                                         font-size: $font-size-large;
                                                 }
                                         }
+                                }
+                        }
+
+                        &__subtitle {
+
+                                h2 {
+                                        font-size: $font-size-large;
+                                        line-height: $gutter-extra-large;
                                 }
                         }
                 }
@@ -166,6 +197,7 @@
                         }
 
                         &__logo {
+                                margin-bottom: $gutter-extra-large;
         
                                 &__big-circle {
 
@@ -202,6 +234,13 @@
                                         left: -5px;
                                 }
                         }
+
+                        &__subtitle {
+
+                                h2 {
+                                        font-size: $font-size-very-large;
+                                }
+                        }
                 }
         }
 }
@@ -213,6 +252,7 @@
                 .general-header {
         
                         &__highline {
+                                margin-bottom: $gutter-extra-large;
 
                                 &__id {
                                         font-size: $font-size-ultra-large * 1.2;
@@ -221,7 +261,6 @@
                                 &__nav {
                                                 
                                         &__links {
-
                                                 &__link {
                                                         font-size: $font-size-extra-large;
                                                 }
@@ -230,12 +269,12 @@
                         }
 
                         &__logo {
+                                margin-bottom: $gutter-extra-large;
         
                                 &__big-circle {
 
                                         width: 300px;
                                         height: 300px;
-                                        border: solid 1px red;
                                 }
         
                                 &__sun-moon {
@@ -265,6 +304,13 @@
                                         position: absolute;
                                         top: 80px;
                                         left: -30px;
+                                }
+                        }
+
+                        &__subtitle {
+
+                                h2 {
+                                        font-size: $font-size-extra-large;
                                 }
                         }
                 }

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Tsukimi+Rounded&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap");
 @keyframes parapenteSmall {
@@ -40,6 +41,16 @@
     width: 120px;
     top: 55px;
     left: 155px;
+  }
+}
+@keyframes separatorHorizontal {
+  from {
+    opacity: 0;
+    width: 1%;
+  }
+  to {
+    opacity: 1;
+    width: 70%;
   }
 }
 .body {
@@ -85,7 +96,7 @@
 .body .general-header__highline__nav__links__link:hover {
   color: #DAA552;
 }
-.body .general-header__logo {
+.body .general-header__logo { /* Le parapente vole 5secondes dès le chargement de la page */
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -125,6 +136,25 @@
   top: 45px;
   left: 20px;
 }
+.body .general-header__subtitle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 2rem;
+}
+.body .general-header__subtitle h2 {
+  text-align: center;
+  font-family: "Quicksand", sans-serif;
+}
+.body .general-header__subtitle .separator-horizontal { /* Le séparateur apparaît en 1 seconde, 0.5 secondes la fin du vol en parapente à T+5secondes */
+  height: 2px;
+  background-image: linear-gradient(to right, #d2420f, #d64e0f, #d9590f, #dd6311, #e06d13, #e07619, #e17e1f, #e18626, #df8e31, #dd963c, #db9e47, #daa552);
+  border-radius: 5px;
+  margin: 1rem 0;
+  opacity: 0; /* opacity finale fournie par l'animation */
+  width: 1%; /* width finale fournie par l'animation */
+  animation: separatorHorizontal 1s 4.5s ease-in-out forwards; /* Fowards = empêche de retourner à l'état initial */
+}
 
 @media all and (min-width: 420px) {
   .body .general-header__highline__id {
@@ -137,6 +167,10 @@
   }
   .body .general-header__highline__nav__links__link {
     font-size: 1.25rem;
+  }
+  .body .general-header__subtitle h2 {
+    font-size: 1.25rem;
+    line-height: 2.5rem;
   }
 }
 @media all and (min-width: 600px) {
@@ -153,6 +187,9 @@
   }
   .body .general-header__highline__nav__links__link {
     font-size: 2rem;
+  }
+  .body .general-header__logo {
+    margin-bottom: 2.5rem;
   }
   .body .general-header__logo__big-circle {
     width: 300px;
@@ -183,18 +220,26 @@
     top: 75px;
     left: -5px;
   }
+  .body .general-header__subtitle h2 {
+    font-size: 1.5rem;
+  }
 }
 @media all and (min-width: 1024px) {
+  .body .general-header__highline {
+    margin-bottom: 2.5rem;
+  }
   .body .general-header__highline__id {
     font-size: 3rem;
   }
   .body .general-header__highline__nav__links__link {
     font-size: 2rem;
   }
+  .body .general-header__logo {
+    margin-bottom: 2.5rem;
+  }
   .body .general-header__logo__big-circle {
     width: 300px;
     height: 300px;
-    border: solid 1px red;
   }
   .body .general-header__logo__sun-moon {
     height: 260px;
@@ -220,6 +265,9 @@
     position: absolute;
     top: 80px;
     left: -30px;
+  }
+  .body .general-header__subtitle h2 {
+    font-size: 2rem;
   }
 }
 
