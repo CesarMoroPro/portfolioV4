@@ -12,10 +12,12 @@
                         <HardskillsComponent></HardskillsComponent>
                         <SoftskillsComponent></SoftskillsComponent>
                 </section>
-                
+
                 <SeparatorHorizontal></SeparatorHorizontal>
         
                 <ProjectsComponent></ProjectsComponent>
+
+                <SeparatorHorizontal></SeparatorHorizontal>
         </section>
 
 </template>
