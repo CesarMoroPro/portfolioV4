@@ -6,10 +6,21 @@
                 height: 2px;
                 background-image: $gradient-sunshine;
                 border-radius: 5px;
-                margin: $gutter-regular 0;
+                margin: $gutter-large 0;
                 opacity: 0; /* opacity finale fournie par l'animation */
                 width: 1%; /* width finale fournie par l'animation */
         
                 animation: separatorHorizontal 1s 4.5s ease-in-out forwards; /* Fowards = empêche de retourner à l'état initial */
         }
+}
+
+//= LARGEUR TABLET MINIMUM
+@media all and (min-width: ($mobile-max + 1)) {
+
+       .general-separator {
+
+                .separator-horizontal {
+                        margin-top: $gutter-extra-large;
+                }
+       }
 }

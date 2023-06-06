@@ -1,5 +1,5 @@
 <template>
-        <div class="general-skills" @click="openSection">
+        <section class="general-skills" @click="openSection">
                 <h2 id="softskills" class="general-h2">Savoir-Être / Softskills</h2>
 
                 <div class="general-skills__all-skills" v-show="isSkillsSectionOpen">
@@ -7,7 +7,7 @@
                                 <li class="general-skills__one-skill">{{ el.name }}</li>
                         </ul>
                 </div>
-        </div>
+        </section>
 </template>
 
 

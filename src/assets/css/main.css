@@ -279,7 +279,7 @@
     left: -30px;
   }
   .body .general-header__subtitle {
-    margin: 7.5rem 0;
+    margin-top: 7.5rem 0;
   }
   .body .general-header__subtitle__qualification {
     font-size: 2rem;
@@ -288,10 +288,13 @@
     margin: 5rem 0;
   }
 }
+.body .general-section p, .body .general-section li {
+  font-size: 1rem;
+}
 .body .general-section .general-h2 {
   font-family: "Tsukimi Rounded", sans-serif;
   font-size: 1.25rem;
-  margin: 1.5rem 1rem;
+  margin: 2rem 1rem 1.5rem;
   color: #D2420F;
   cursor: pointer;
 }
@@ -303,8 +306,17 @@
   margin: 1rem 0.75rem;
   text-align: justify;
 }
+.body .general-section .general-about__texts .general-texts .flags {
+  font-size: 1.5rem;
+}
+.body .general-section .all-skills-section {
+  display: flex;
+  flex-direction: column;
+}
 .body .general-section .general-skills__all-skills {
-  width: 60%;
+  min-width: 230px;
+  max-width: 320px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -321,7 +333,30 @@
 .body .general-section .general-skills__one-skill {
   margin: 1rem 0.75rem;
 }
-
+@media all and (min-width: 768px) {
+  .body .general-section p, .body .general-section li {
+    font-size: 1.25rem;
+  }
+  .body .general-section .general-h2 {
+    font-size: 1.5rem;
+  }
+  .body .general-section .flags {
+    font-size: 2rem;
+  }
+  .body .general-section .all-skills-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+@media all and (min-width: 1024px) {
+  .body .general-section p, .body .general-section li {
+    font-size: 1.25rem;
+  }
+  .body .general-section .general-h2 {
+    font-size: 2rem;
+  }
+}
 .general-separator {
   display: flex;
   justify-content: center;
@@ -330,10 +365,16 @@
   height: 2px;
   background-image: linear-gradient(to right, #d2420f, #d64e0f, #d9590f, #dd6311, #e06d13, #e07619, #e17e1f, #e18626, #df8e31, #dd963c, #db9e47, #daa552);
   border-radius: 5px;
-  margin: 1rem 0;
+  margin: 1.5rem 0;
   opacity: 0; /* opacity finale fournie par l'animation */
   width: 1%; /* width finale fournie par l'animation */
   animation: separatorHorizontal 1s 4.5s ease-in-out forwards; /* Fowards = empêche de retourner à l'état initial */
+}
+
+@media all and (min-width: 768px) {
+  .general-separator .separator-horizontal {
+    margin-top: 2.5rem;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

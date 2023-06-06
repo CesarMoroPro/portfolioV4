@@ -2,10 +2,14 @@
 
         .general-section {
 
+                p, li {
+                        font-size: $font-size-regular;
+                }
+
                 .general-h2 {
                         font-family: $font-secondary;
                         font-size: $font-size-large;
-                        margin: $gutter-large $gutter-regular;
+                        margin: $gutter-very-large $gutter-regular $gutter-large;
                         color: $orange-dark;
                         cursor: pointer;
                 }
@@ -22,14 +26,25 @@
                                         line-height: $gutter-large;
                                         margin: $gutter-regular $gutter-medium;
                                         text-align: justify;
+
+                                        .flags {
+                                                font-size: $font-size-very-large;
+                                        }
                                 }
                         }   
+                }
+
+                .all-skills-section {
+                        display: flex;
+                        flex-direction: column;
                 }
 
                 .general-skills {
 
                         &__all-skills {
-                                width: 60%;
+                                min-width: 230px;
+                                max-width: 320px;
+                                width: 100%;
                                 display: flex;
                                 flex-direction: column;
                                 align-items: center;
@@ -50,5 +65,55 @@
                         }
                 }
 
+                .general-projects {
+                        
+                }
+
+        }
+}
+
+//= LARGEUR TABLET MINIMUM
+@media all and (min-width: ($mobile-max + 1)) {
+
+        .body {
+
+                .general-section {
+
+                        p, li {
+                                font-size: $font-size-large;
+                        }
+
+                        .general-h2 {
+                                font-size: $font-size-very-large;
+                        }
+
+                        .flags {
+                                font-size: $font-size-extra-large;
+                        }
+
+                        .all-skills-section {
+                                display: flex;
+                                flex-direction: row;
+                                justify-content: space-between;
+                        }
+                }
+        }
+}
+
+//= LARGEUR DESKTOP MINIMUM
+@media all and (min-width: ($tablet-max + 1)) {
+
+        .body {
+
+                .general-section {
+
+                        p, li {
+                                font-size: $font-size-large;
+                        }
+
+                        .general-h2 {
+                                font-size: $font-size-extra-large;
+                        }
+                }
         }
 }

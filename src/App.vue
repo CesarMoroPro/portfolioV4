@@ -8,11 +8,16 @@
 
                 <SeparatorHorizontal></SeparatorHorizontal>
 
-                <HardskillsComponent></HardskillsComponent>
-                <SoftskillsComponent></SoftskillsComponent>
-
+                <section class="all-skills-section"> <!-- Styles définis dans pages > _home.scss -->
+                        <HardskillsComponent></HardskillsComponent>
+                        <SoftskillsComponent></SoftskillsComponent>
+                </section>
+                
                 <SeparatorHorizontal></SeparatorHorizontal>
+        
+                <ProjectsComponent></ProjectsComponent>
         </section>
+
 </template>
 
 <script>
@@ -21,6 +26,7 @@ import HeaderComponent from './components/Header.vue';
 import AboutComponent from './components/About.vue';
 import HardskillsComponent from './components/Hardskills.vue';
 import SoftskillsComponent from './components/Softskills.vue';
+import ProjectsComponent from './components/Projects.vue';
 
 import SeparatorHorizontal from './components/SeparatorHorizontal.vue';
 
@@ -30,6 +36,7 @@ export default {
                 AboutComponent,
                 HardskillsComponent,
                 SoftskillsComponent,
+                ProjectsComponent,
 
                 SeparatorHorizontal,
         },

@@ -9,9 +9,15 @@
 
 
 ## Section About
-- CSS des liens
-- 
 
+
+
+## Section Skills
+- Mutualiser la fonction qui ouvre / ferme les skills simultanément
+
+
+## Section Projects
+- Avancer sur les cartes de projets
 
 
 
