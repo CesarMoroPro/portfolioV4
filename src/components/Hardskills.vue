@@ -1,9 +1,12 @@
 <template>
-        <div class="general-hardskills" @click="openSection">
-                <h2 class="general-h2">Hardskills</h2>
-                <ul v-for="(el, i) in hardskillsList" v-show="isHardskillsSectionOpen">
-                        <li>{{ el.name }}</li>
-                </ul>
+        <div class="general-skills" @click="openSection">
+                <h2 id="hardskills" class="general-h2">Savoir-Faire / Hardskills</h2>
+
+                <div class="general-skills__all-skills" v-show="isSkillsSectionOpen">
+                        <ul v-for="(el, i) in hardskillsList">
+                                <li class="general-skills__one-skill">{{ el.name }}</li>
+                        </ul>
+                </div>
         </div>
 </template>
 
@@ -12,7 +15,7 @@
 export default {
         data() {
                 return {
-                        isHardskillsSectionOpen: false,
+                        isSkillsSectionOpen: false,
 
                         /* hardskillsList: 
                         N1 : HTML, CSS, JS Vanilla, PHP, Node.js, SQL, NoSQL 
@@ -21,57 +24,22 @@ export default {
                         hardskillsList: [
                                 {
                                         id: "",
-                                        name: "HTML",
+                                        name: "HTML, CSS / Sass",
                                 },
 
                                 {
                                         id: "",
-                                        name: "CSS",
+                                        name: "Vanilla JavaScript, Vue.js 3",
                                 },
 
                                 {
                                         id: "",
-                                        name: "JavaScript Vanilla",
+                                        name: "PHP, Node.js (en cours)",
                                 },
 
                                 {
                                         id: "",
-                                        name: "PHP",
-                                },
-
-                                {
-                                        id: "",
-                                        name: "SQL",
-                                },
-
-                                {
-                                        id: "",
-                                        name: "MySQL & Adminer / phpMyAdmin",
-                                },
-
-                                {
-                                        id: "",
-                                        name: "NoSQL",
-                                },
-
-                                {
-                                        id: "",
-                                        name: "MongoDB & Mongoose",
-                                },
-
-                                {
-                                        id: "",
-                                        name: "Node.js",
-                                },
-
-                                {
-                                        id: "",
-                                        name: "Express.js",
-                                },
-
-                                {
-                                        id: "",
-                                        name: "Axios",
+                                        name: "SQL & MySQL",
                                 },
 
                                 {
@@ -81,52 +49,7 @@ export default {
 
                                 {
                                         id: "",
-                                        name: "Sass",
-                                },
-
-                                {
-                                        id: "",
-                                        name: "Reset.css",
-                                },
-
-                                {
-                                        id: "",
-                                        name: "jQuery",
-                                },
-
-                                {
-                                        id: "",
-                                        name: "Vue.js 3",
-                                },
-
-                                {
-                                        id: "",
-                                        name: "WordPress No-Code",
-                                },
-
-                                {
-                                        id: "",
-                                        name: "WordPress Code",
-                                },
-
-                                {
-                                        id: "",
-                                        name: "POO",
-                                },
-
-                                {
-                                        id: "",
                                         name: "Git & GitHub",
-                                },
-
-                                {
-                                        id: "",
-                                        name: "NPM",
-                                },
-
-                                {
-                                        id: "",
-                                        name: "Composer",
                                 },
                         ]
                 }
@@ -134,10 +57,10 @@ export default {
 
         methods: {
                 openSection() {
-                        if (this.isHardskillsSectionOpen === false) {
-                                this.isHardskillsSectionOpen = true;
+                        if (this.isSkillsSectionOpen === false) {
+                                this.isSkillsSectionOpen = true;
                         } else {
-                                this.isHardskillsSectionOpen = false;
+                                this.isSkillsSectionOpen = false;
                         }
                 }
         }

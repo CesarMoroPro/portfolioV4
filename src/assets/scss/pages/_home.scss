@@ -13,14 +13,41 @@
                 .general-about {
 
                         &__texts {
+
+                                .french-bio {
+                                        margin-bottom: $gutter-extra-large;
+                                }
+
                                 .general-texts {
                                         line-height: $gutter-large;
                                         margin: $gutter-regular $gutter-medium;
                                         text-align: justify;
                                 }
+                        }   
+                }
+
+                .general-skills {
+
+                        &__all-skills {
+                                width: 60%;
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                                border: solid 1px $orange-light;
+                                border-radius: 6px;
+                                box-shadow: rgba(rgba($orange-dark, 0.25), 0.25) 0px 13px 27px -5px, rgba(rgba($orange-light, 0.3), 0.3) 0px 8px 16px -8px;
+                                margin: $gutter-very-large auto;
+                                padding: $gutter-regular;
                         }
-                        
-        
+
+                        &__all-skills:hover {
+                                background-image: $gradient-sunshine;
+                                color: white;
+                        }
+
+                        &__one-skill {
+                                margin: $gutter-regular $gutter-medium;
+                        }
                 }
 
         }
