@@ -118,19 +118,35 @@
                                                 display: flex;
                                                 flex-direction: column;
                                                 align-items: center;
-                                                justify-content: center;
+                                                justify-content: space-around;
+
+                                                &__technologies {
+                                                        display: flex;
+                                                        flex-direction: row;
+                                                        justify-content: space-around;
+                                                        flex-wrap: wrap;
+
+                                                        .each-techno {
+                                                                background-color: rgba($pur-white, 0.75);
+                                                                color: $orange-dark;
+                                                                padding: $gutter-small;
+                                                                margin: $gutter-small;
+                                                                border-radius: 6px;
+                                                                text-align: center;
+                                                        }
+                                                }
 
                                                 &__excerpt {
                                                         text-align: justify;
                                                         line-height: $gutter-very-large;
                                                         color: $pur-white;
-                                                        margin: $gutter-regular;
+                                                        margin: 0 $gutter-regular;
                                                 }
 
                                                 &__icons {
 
                                                         .projects-icons {
-                                                                margin: $gutter-regular $gutter-large;
+                                                                margin: $gutter-small $gutter-large;
                                                                 color: $pur-white;
                                                         }
                                                 }

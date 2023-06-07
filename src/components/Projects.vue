@@ -3,7 +3,7 @@
                 <h2 id="projects" class="general-h2" @click="openSection">Projets / Projects</h2>
 
                 <section class="general-projects__all-projects" v-show="!isProjectsSectionOpen">
-                        <section class="general-projects__all-projects__one-project" v-for="(project, index) in projectsList" @mouseover="cardHovered(index)" @mouseout="cardNotHovered(index)">
+                        <section class="general-projects__all-projects__one-project" v-for="(project, index) in projectsList" :key="index" @mouseover="cardHovered(index)" @mouseout="cardNotHovered(index)">
                                 
                                 <!--^ CARTE NON SURVOLÉE  -->
                                 <div class="general-projects__all-projects__one-project__normal-display" v-show="!project.isCardHovered">
@@ -20,6 +20,12 @@
 
                                 <!--^ AU SURVOL DE LA CARTE -->
                                 <div class="general-projects__all-projects__one-project__card-hovered" v-show="project.isCardHovered">
+                                        <div class="general-projects__all-projects__one-project__card-hovered__technologies" >
+                                                <ul class="each-techno" v-for="(techno, index) in project.technos" :key="index">
+                                                        <li>{{ techno }}</li>
+                                                </ul>
+                                        </div>
+
                                         <p class="general-projects__all-projects__one-project__card-hovered__excerpt">{{ project.excerpt }}</p>
                                         
                                         <div class="general-projects__all-projects__one-project__card-hovered__icons">
