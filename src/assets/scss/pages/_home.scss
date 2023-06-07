@@ -67,6 +67,77 @@
 
                 .general-projects {
                         
+                        &__all-projects {
+
+                                margin: $gutter-extra-large $gutter-regular;
+
+                                &__one-project {
+                                        padding: $gutter-medium;
+                                        margin: $gutter-regular $gutter-small;
+
+                                        &__normal-display {
+                                                text-align: center;
+                                                margin-bottom: $gutter-medium;
+                                                border: solid 3px $orange-light;
+                                                border-radius: 10px;
+                                                box-shadow: rgba(rgba($orange-dark, 0.25), 0.25) 0px 13px 27px -5px, rgba(rgba($orange-light, 0.3), 0.3) 0px 8px 16px -8px;
+
+                                                &__title {
+                                                        margin: $gutter-medium auto;
+                                                        font-size: $font-size-large;
+                                                        text-transform: uppercase;
+                                                        font-family: $font-secondary;
+                                                        height: 25px;
+                                                }
+
+                                                &__date {
+                                                        color: $gold;
+                                                        font-size: $font-size-small;
+                                                        margin-bottom: $gutter-medium;
+                                                        height: 15px;
+                                                }
+
+                                                &__img {
+                                                        
+                                                        .thumbnail {
+                                                                width: 100%;
+                                                                height: 250px;
+                                                                border-radius: 0 0 6px 6px;
+                                                                margin-bottom: -2px;
+                                                                object-fit: cover;
+                                                        }
+                                                }
+                                        }
+
+                                        &__card-hovered {
+                                                margin-bottom: $gutter-medium;
+                                                height: 326px;
+                                                background-image: $gradient-sunshine;
+                                                border-radius: 10px;
+
+                                                display: flex;
+                                                flex-direction: column;
+                                                align-items: center;
+                                                justify-content: center;
+
+                                                &__excerpt {
+                                                        text-align: justify;
+                                                        line-height: $gutter-very-large;
+                                                        color: $pur-white;
+                                                        margin: $gutter-regular;
+                                                }
+
+                                                &__icons {
+
+                                                        .projects-icons {
+                                                                margin: $gutter-regular $gutter-large;
+                                                                color: $pur-white;
+                                                        }
+                                                }
+                                        }
+                                }
+                        }
+
                 }
 
         }

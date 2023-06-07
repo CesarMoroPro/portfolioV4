@@ -333,6 +333,61 @@
 .body .general-section .general-skills__one-skill {
   margin: 1rem 0.75rem;
 }
+.body .general-section .general-projects__all-projects {
+  margin: 2.5rem 1rem;
+}
+.body .general-section .general-projects__all-projects__one-project {
+  padding: 0.75rem;
+  margin: 1rem 0.5rem;
+}
+.body .general-section .general-projects__all-projects__one-project__normal-display {
+  text-align: center;
+  margin-bottom: 0.75rem;
+  border: solid 3px #E47A18;
+  border-radius: 10px;
+  box-shadow: rgba(210, 66, 15, 0.25) 0px 13px 27px -5px, rgba(228, 122, 24, 0.3) 0px 8px 16px -8px;
+}
+.body .general-section .general-projects__all-projects__one-project__normal-display__title {
+  margin: 0.75rem auto;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  font-family: "Tsukimi Rounded", sans-serif;
+  height: 25px;
+}
+.body .general-section .general-projects__all-projects__one-project__normal-display__date {
+  color: #DAA552;
+  font-size: 0.5rem;
+  margin-bottom: 0.75rem;
+  height: 15px;
+}
+.body .general-section .general-projects__all-projects__one-project__normal-display__img .thumbnail {
+  width: 100%;
+  height: 250px;
+  border-radius: 0 0 6px 6px;
+  margin-bottom: -2px;
+  object-fit: cover;
+}
+.body .general-section .general-projects__all-projects__one-project__card-hovered {
+  margin-bottom: 0.75rem;
+  height: 326px;
+  background-image: linear-gradient(to right, #d2420f, #d64e0f, #d9590f, #dd6311, #e06d13, #e07619, #e17e1f, #e18626, #df8e31, #dd963c, #db9e47, #daa552);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.body .general-section .general-projects__all-projects__one-project__card-hovered__excerpt {
+  text-align: justify;
+  line-height: 2rem;
+  color: #ffffff;
+  margin: 1rem;
+}
+.body .general-section .general-projects__all-projects__one-project__card-hovered__icons .projects-icons {
+  margin: 1rem 1.5rem;
+  color: #ffffff;
+}
+
 @media all and (min-width: 768px) {
   .body .general-section p, .body .general-section li {
     font-size: 1.25rem;
