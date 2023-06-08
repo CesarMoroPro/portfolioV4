@@ -1,6 +1,6 @@
 <template>
         <section class="general-skills" @click="openSection">
-                <h2 id="softskills" class="general-h2">Savoir-Être / Softskills</h2>
+                <h2 class="general-h2">Savoir-Être / Softskills</h2>
 
                 <div class="general-skills__all-skills" v-show="isSkillsSectionOpen">
                         <ul v-for="(el, i) in softskillsList">

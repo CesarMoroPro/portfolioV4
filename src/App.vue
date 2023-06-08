@@ -8,9 +8,10 @@
 
                 <SeparatorHorizontal></SeparatorHorizontal>
 
-                <section class="all-skills-section"> <!-- Styles définis dans pages > _home.scss -->
-                        <HardskillsComponent></HardskillsComponent>
-                        <SoftskillsComponent></SoftskillsComponent>
+                <h2 id="projects" class="general-h2" @click="openSection">Compétences / Skills</h2>
+                <section class="all-skills-section"> <!-- Styles définis dans "pages > _home.scss" -->
+                        <HardskillsComponent v-show="isSkillsSectionOpen"></HardskillsComponent>
+                        <SoftskillsComponent v-show="isSkillsSectionOpen"></SoftskillsComponent>
                 </section>
 
                 <SeparatorHorizontal></SeparatorHorizontal>
@@ -41,6 +42,20 @@ export default {
                 ProjectsComponent,
 
                 SeparatorHorizontal,
+        },
+
+        data() {
+                return {
+                        isSkillsSectionOpen: false,
+                }
+        },
+
+        openSection() {
+                if (this.isSkillsSectionOpen === false) {
+                        this.isSkillsSectionOpen = true;
+                } else {
+                        this.isSkillsSectionOpen = false;
+                }
         },
 }
 

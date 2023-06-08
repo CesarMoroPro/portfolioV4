@@ -14,10 +14,13 @@
 
 ## Section Skills
 - Mutualiser la fonction qui ouvre / ferme les skills simultanément
+- Ajouter un titre 2 "Skills" et transformer les actuels H2 hardskills et softskills en h3
 
 
 ## Section Projects
-- Avancer sur les cartes de projets
+- mettre en row les tags technos
+- adapter les dimensions selon les terminaux
+- adapter les placements selon les terminaux
 
 
 

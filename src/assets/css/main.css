@@ -290,6 +290,7 @@
 }
 .body .general-section p, .body .general-section li {
   font-size: 1rem;
+  text-align: center;
 }
 .body .general-section .general-h2 {
   font-family: "Tsukimi Rounded", sans-serif;
@@ -297,6 +298,7 @@
   margin: 2rem 1rem 1.5rem;
   color: #D2420F;
   cursor: pointer;
+  text-align: center;
 }
 .body .general-section .general-about__texts .french-bio {
   margin-bottom: 2.5rem;
@@ -339,62 +341,74 @@
 .body .general-section .general-projects__all-projects__one-project {
   padding: 0.75rem;
   margin: 1rem 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .body .general-section .general-projects__all-projects__one-project__normal-display {
+  width: 300px;
   text-align: center;
   margin-bottom: 0.75rem;
-  border: solid 3px #E47A18;
+  border: solid 2px #E47A18;
   border-radius: 10px;
-  box-shadow: rgba(210, 66, 15, 0.25) 0px 13px 27px -5px, rgba(228, 122, 24, 0.3) 0px 8px 16px -8px;
+  box-shadow: rgba(0, 0, 0, 0.75) 0px 5px 10px;
 }
 .body .general-section .general-projects__all-projects__one-project__normal-display__title {
   margin: 0.75rem auto;
-  font-size: 1.25rem;
+  font-size: 1rem;
   text-transform: uppercase;
   font-family: "Tsukimi Rounded", sans-serif;
-  height: 25px;
+  height: 10px;
 }
 .body .general-section .general-projects__all-projects__one-project__normal-display__date {
   color: #DAA552;
-  font-size: 0.5rem;
   margin-bottom: 0.75rem;
-  height: 15px;
+  height: 5px;
+}
+.body .general-section .general-projects__all-projects__one-project__normal-display__date .date {
+  font-size: 0.75rem;
 }
 .body .general-section .general-projects__all-projects__one-project__normal-display__img .thumbnail {
   width: 100%;
   height: 250px;
-  border-radius: 0 0 6px 6px;
+  border-radius: 0 0 7px 7px;
   margin-bottom: -2px;
   object-fit: cover;
 }
 .body .general-section .general-projects__all-projects__one-project__card-hovered {
+  width: 300px;
+  height: 330px;
   margin-bottom: 0.75rem;
-  height: 326px;
   background-image: linear-gradient(to right, #d2420f, #d64e0f, #d9590f, #dd6311, #e06d13, #e07619, #e17e1f, #e18626, #df8e31, #dd963c, #db9e47, #daa552);
   border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.75) 0px 7px 12px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
 }
-.body .general-section .general-projects__all-projects__one-project__card-hovered__technologies {
+.body .general-section .general-projects__all-projects__one-project__card-hovered__technologies .each-techno-ul-container {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 .body .general-section .general-projects__all-projects__one-project__card-hovered__technologies .each-techno {
   background-color: rgba(255, 255, 255, 0.75);
   color: #D2420F;
-  padding: 0.5rem;
+  font-size: 0.75rem;
+  padding: 0.25rem;
   margin: 0.5rem;
   border-radius: 6px;
   text-align: center;
+  opacity: 1;
 }
 .body .general-section .general-projects__all-projects__one-project__card-hovered__excerpt {
   text-align: justify;
-  line-height: 2rem;
+  line-height: 1.5rem;
   color: #ffffff;
+  font-size: 0.75rem;
   margin: 0 1rem;
 }
 .body .general-section .general-projects__all-projects__one-project__card-hovered__icons .projects-icons {
@@ -402,6 +416,19 @@
   color: #ffffff;
 }
 
+@media all and (min-width: 430px) {
+  .body .general-section .general-projects__all-projects__one-project__normal-display__title {
+    height: 25px;
+    font-size: 1.25rem;
+  }
+  .body .general-section .general-projects__all-projects__one-project__normal-display__date {
+    height: 15px;
+    font-size: 0.5rem;
+  }
+  .body .general-section .general-projects__all-projects__one-project__normal-display__img {
+    height: 250px;
+  }
+}
 @media all and (min-width: 768px) {
   .body .general-section p, .body .general-section li {
     font-size: 1.25rem;
