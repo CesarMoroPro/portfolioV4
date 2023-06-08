@@ -9,9 +9,9 @@
                 <SeparatorHorizontal></SeparatorHorizontal>
 
                 <h2 id="projects" class="general-h2" @click="openSection">Compétences / Skills</h2>
-                <section class="all-skills-section"> <!-- Styles définis dans "pages > _home.scss" -->
-                        <HardskillsComponent v-show="isSkillsSectionOpen"></HardskillsComponent>
-                        <SoftskillsComponent v-show="isSkillsSectionOpen"></SoftskillsComponent>
+                <section class="all-skills-section" v-show="isSkillsSectionOpen"> <!-- Styles définis dans "pages > _home.scss" -->
+                        <HardskillsComponent></HardskillsComponent>
+                        <SoftskillsComponent></SoftskillsComponent>
                 </section>
 
                 <SeparatorHorizontal></SeparatorHorizontal>
@@ -56,8 +56,10 @@ export default {
 
         openSection() {
                 if (this.isSkillsSectionOpen === false) {
+                        console.log(this.isSkillsSectionOpen);
                         this.isSkillsSectionOpen = true;
                 } else {
+                        console.log(this.isSkillsSectionOpen);
                         this.isSkillsSectionOpen = false;
                 }
         },

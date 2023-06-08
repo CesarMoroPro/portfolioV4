@@ -10,8 +10,8 @@
                 opacity: 0; /* opacity finale fournie par l'animation */
                 width: 1%; /* width finale fournie par l'animation */
         
-                /* Le séparateur apparaît en 1.5 seconde, 1 seconde après le chargement de la page */
-                animation: separatorHorizontal 1.5s 1s ease-in-out forwards; /* Fowards = empêche de retourner à l'état initial */
+                /* Le séparateur apparaît en 1.5 seconde */
+                animation: separatorHorizontal 1.5s ease-in-out forwards; /* Fowards = empêche de retourner à l'état initial */
         }
 }
 

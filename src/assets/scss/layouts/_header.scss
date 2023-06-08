@@ -94,6 +94,11 @@
                         &__qualification {
                                 text-align: center;
                                 font-family: $font-main;
+
+                                &__speciality {
+                                        color: $gold;
+                                        font-weight: bold;
+                                }
                         }                    
                 }
         }
@@ -119,7 +124,9 @@
                                                 justify-content: space-around;
 
                                                 &__link {
+                                                        text-align: center;
                                                         font-size: $font-size-large;
+                                                        margin: $gutter-medium;
                                                 }
                                         }
                                 }
@@ -154,6 +161,7 @@
 
                                                 &__link {
                                                         font-size: $font-size-very-large;
+                                                        margin: $gutter-regular;
                                                 }
                                         }
                                 }
@@ -179,16 +187,6 @@
 
                                 &__id {
                                         font-size: $font-size-ultra-large * 1.2;
-                                }
-        
-                                &__nav {
-                                                
-                                        &__links {
-
-                                                &__link {
-                                                        font-size: $font-size-extra-large;
-                                                }
-                                        }
                                 }
                         }
 

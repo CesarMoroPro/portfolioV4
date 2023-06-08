@@ -11,9 +11,9 @@
                                         <font-awesome-icon class="icon general-highline__nav__menu-icon" :icon="['fas', 'bars']" size="xl"/>
                                 </div> -->
                                 <div class="general-header__highline__nav__links">
-                                        <a class="general-header__highline__nav__links__link">About</a>
-                                        <a class="general-header__highline__nav__links__link">Skills</a>
-                                        <a class="general-header__highline__nav__links__link">Projects</a>
+                                        <a class="general-header__highline__nav__links__link">À propos / About</a>
+                                        <a class="general-header__highline__nav__links__link">Compétences / Skills</a>
+                                        <a class="general-header__highline__nav__links__link">Projets / Projects</a>
                                 </div>
                         </nav>
                 </div>
@@ -29,7 +29,7 @@
                 <div class="general-header__subtitle">
                         <h2 class="general-header__subtitle__qualification">
                                 Développeur Web et Web Mobile<br>
-                                JavaScript - Vue.js 3
+                                <span class="general-header__subtitle__qualification__speciality"> JavaScript - Vue.js 3</span>
                         </h2>
                 </div>
 

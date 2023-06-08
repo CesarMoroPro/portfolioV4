@@ -2,7 +2,7 @@
 
 ## Header
 - Retoucher la montagne pour masquer le soleil
-- Réduire le temps d'animation parapente
+- Liens en Français et Anglais
 
 ## Section globale
 - Mutualiser les fonctions "@click="openSection..." pour chaque titre h2, avec argument
@@ -18,9 +18,6 @@
 
 
 ## Section Projects
-- mettre en row les tags technos
-- adapter les dimensions selon les terminaux
-- adapter les placements selon les terminaux
 
 
 

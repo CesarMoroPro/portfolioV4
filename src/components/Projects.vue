@@ -2,7 +2,7 @@
         <section class="general-projects">
                 <h2 id="projects" class="general-h2" @click="openSection">Projets / Projects</h2>
 
-                <section class="general-projects__all-projects" v-show="!isProjectsSectionOpen">
+                <section class="general-projects__all-projects" v-show="isProjectsSectionOpen">
                         <section class="general-projects__all-projects__one-project" v-for="(project, index) in projectsList" :key="index" @mouseover="cardHovered(index)" @mouseout="cardNotHovered(index)">
                                 
                                 <!--^ CARTE NON SURVOLÉE  -->
