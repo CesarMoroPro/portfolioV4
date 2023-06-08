@@ -30,10 +30,10 @@
                                         <p class="general-projects__all-projects__one-project__card-hovered__excerpt">{{ project.excerpt }}</p>
                                         
                                         <div class="general-projects__all-projects__one-project__card-hovered__icons">
-                                                        <a :href="project.linkProject" class="projects-icons" v-show="project.projectOnLine"> <font-awesome-icon :icon="['fas', 'globe']" fade /></a>
-                                                        <a :href="project.githubLink" class="projects-icons" v-show="project.githubIcon"><font-awesome-icon :icon="['fab', 'github']" fade /></a>
-                                                        <a :href="project.youtubeLink" class="projects-icons" v-show="project.youtubeIcon"><font-awesome-icon :icon="['fab', 'youtube']" fade /></a>
-                                                        <i class="projects-icons" v-show="project.wordpressIcon"><font-awesome-icon :icon="['fab', 'wordpress']" /></i>
+                                                        <a :href="project.linkProject" class="projects-icons" v-show="project.projectOnLine"> <font-awesome-icon class="icon-size" :icon="['fas', 'globe']" fade /></a>
+                                                        <a :href="project.githubLink" class="projects-icons" v-show="project.githubIcon"><font-awesome-icon class="icon-size" :icon="['fab', 'github']" fade /></a>
+                                                        <a :href="project.youtubeLink" class="projects-icons" v-show="project.youtubeIcon"><font-awesome-icon class="icon-size" :icon="['fab', 'youtube']" fade /></a>
+                                                        <i class="projects-icons" v-show="project.wordpressIcon"><font-awesome-icon class="icon-size" :icon="['fab', 'wordpress']" /></i>
                                         </div>
 
                                 </div>
@@ -66,6 +66,7 @@ export default {
                         isProjectsSectionOpen: false,
 
                         /* Projects data */
+                        /* Attention : pour les propriétés "excerpt", se limiter à 360 caractères */
                         projectsList: [
 
                                 /* Hello Macros */
@@ -98,7 +99,7 @@ export default {
                                                 "HTML", "CSS", "JavaScript"
                                         ],
                                         finition: "front-end",
-                                        excerpt: "Ce projet est mon portfolio, sur lequel vous vous trouvez actuellement ! La version dynamique avec un back-end Node.js est en cours de développement",
+                                        excerpt: "Ce projet est mon portfolio, sur lequel vous vous trouvez actuellement ! La V4.0 de mon portfolio étant maintenant déployée, cette V3.0. statique n'est plus maintenue.",
                                         projectOnLine: true,
                                         linkProject: "https://cesar-moro.fr",
                                         githubLink: "https://github.com/CesarMoroPro/portfolio-Vue.js",
@@ -181,7 +182,7 @@ export default {
                                                 "HTML", "CSS", "JavaScript", "PHP", "SQL", "WordPress (code)",
                                         ],
                                         finition: "fullstack",
-                                        excerpt: "Projet de fin de formation réalisé en pair-programming, en conditions réelles de travail en entreprise. Formation Développeur Web et Web Mobile de 6 mois, au sein de l'école O'clock.",
+                                        excerpt: "Projet de fin de formation réalisé en pair-programming, en conditions réelles de travail en entreprise. Formation Développeur Web et Web Mobile de 6 mois, au sein de l'école O'clock. Ce projet n'a pas été déployé, seule la vidéo de présentation est disponible. N'ayant pas été le LeadDev sur ce projet, je n'ai pas accès au repo Github.",
                                         projectOnLine: false,
                                         linkProject: "https://www.youtube.com/live/Gbczg095K_A?feature=share&t=3775",
                                         githubLink: "",

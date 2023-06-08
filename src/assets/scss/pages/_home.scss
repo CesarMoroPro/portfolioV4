@@ -70,7 +70,8 @@
                 .general-projects {
                         
                         &__all-projects {
-
+                                display: flex;
+                                flex-direction: column;
                                 margin: $gutter-extra-large $gutter-regular;
 
                                 &__one-project {
@@ -84,7 +85,7 @@
                                                 width: 300px;
                                                 text-align: center;
                                                 margin-bottom: $gutter-medium;
-                                                border: solid 2px $orange-light;
+                                                border: solid 2px $gold;
                                                 border-radius: 10px;
                                                 box-shadow: rgba(0, 0, 0, 0.75) 0px 5px 10px;
 
@@ -166,73 +167,15 @@
                                                         .projects-icons {
                                                                 margin: $gutter-small $gutter-large;
                                                                 color: $pur-white;
-                                                                $font-size: $font-size-regular;
-                                                        }
-                                                }
-                                        }
-                                }
-                        }
-                }
-        }
-}
 
-//= LARGEUR MINIMUM 430
-@media all and (min-width: 430px) {
-        .body {
-
-                .general-section {
-
-                        .general-projects {
-
-                                &__all-projects {
-
-                                        &__one-project {
-
-                                                &__normal-display {
-
-                                                        &__title {
-                                                                height: 25px;
-                                                                font-size: $font-size-large;
-                                                        }
-
-                                                        &__date {
-                                                                height: 15px;
-                                                                font-size: $font-size-small;
-                                                        }
-
-                                                        &__img {
-                                                                height: 250px;
-                                                        }
-                                                }
-
-                                                &__card-hovered {
-
-                                                        &__technologies {
-
-                                                                .each-techno-ul-container {
-
-                                                                        .each-techno {
-                                                                                $font-size: $font-size-regular;
-                                                                        }
-                                                                }
-
-                                                        }
-
-                                                        &__excerpt {
-                                                                $font-size: $font-size-regular;
-                                                        }
-
-                                                        &__icons {
-
-                                                                .projects-icons {
-                                                                        $font-size: $font-size-large;
+                                                                .icon-size {
+                                                                        font-size: $font-size-regular;
                                                                 }
                                                         }
                                                 }
                                         }
                                 }
                         }
-
                 }
         }
 }
@@ -260,6 +203,71 @@
                                 display: flex;
                                 flex-direction: row;
                                 justify-content: space-between;
+                        }
+
+                        .general-projects {
+
+                                &__all-projects {
+                                        flex-direction: row;
+                                        flex-wrap: wrap;
+                                        justify-content: center;
+
+                                        &__one-project {
+                                                
+                                                &__normal-display {
+                                                        width: 500px;
+        
+                                                        &__title {
+                                                                font-size: $font-size-large;
+                                                                height: 20px;
+                                                        }
+        
+                                                        &__date {
+                                                                height: 15px;
+        
+                                                                .date {
+                                                                        font-size: $font-size-regular;
+                                                                }
+                                                        }
+        
+                                                        &__img {
+                                                                
+                                                                .thumbnail {
+                                                                        width: 100%;
+                                                                        height: 305px;
+                                                                }
+                                                        }
+                                                }
+
+                                                &__card-hovered {
+                                                        width: 500px;
+                                                        height: 380px;
+        
+                                                        &__technologies {
+        
+                                                                .each-techno {
+                                                                        font-size: $font-size-large;
+                                                                        padding: $gutter-small;
+                                                                }
+                                                        }
+        
+                                                        &__excerpt {
+                                                                line-height: $gutter-large;
+                                                                font-size: $font-size-large;
+                                                        }
+        
+                                                        &__icons {
+
+                                                                .projects-icons {
+        
+                                                                        .icon-size {
+                                                                                font-size: $font-size-very-large;
+                                                                        }
+                                                                }
+                                                        }
+                                                }
+                                        }
+                                }
                         }
                 }
         }
