@@ -11,9 +11,9 @@
                                         <font-awesome-icon class="icon general-highline__nav__menu-icon" :icon="['fas', 'bars']" size="xl"/>
                                 </div> -->
                                 <div class="general-header__highline__nav__links">
-                                        <a class="general-header__highline__nav__links__link">À propos / About</a>
-                                        <a class="general-header__highline__nav__links__link">Compétences / Skills</a>
-                                        <a class="general-header__highline__nav__links__link">Projets / Projects</a>
+                                        <a href="http://localhost:5173/#about" class="general-header__highline__nav__links__link">À propos / About</a>
+                                        <a href="http://localhost:5173/#skills" class="general-header__highline__nav__links__link">Compétences / Skills</a>
+                                        <a href="http://localhost:5173/#projects" class="general-header__highline__nav__links__link">Projets / Projects</a>
                                 </div>
                         </nav>
                 </div>

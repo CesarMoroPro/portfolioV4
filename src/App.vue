@@ -8,7 +8,7 @@
 
                 <SeparatorHorizontal></SeparatorHorizontal>
 
-                <h2 id="projects" class="general-h2" @click="openSection">Compétences / Skills</h2>
+                <h2 id="skills" class="general-h2" @click="openSection">Compétences / Skills</h2>
                 <section class="all-skills-section" v-show="isSkillsSectionOpen"> <!-- Styles définis dans "pages > _home.scss" -->
                         <HardskillsComponent></HardskillsComponent>
                         <SoftskillsComponent></SoftskillsComponent>
