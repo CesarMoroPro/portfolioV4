@@ -4,7 +4,7 @@ import { createApp } from 'vue'
 //? 02 - Import du Root Component */
 import App from './App.vue'
 
-//^ 04 - Import de librairies tierces
+//^ 05 - Import de librairies tierces
 // Import de reset.css
 import 'reset.css';
 
@@ -23,7 +23,7 @@ library.add(faBars, faGlobe, faGithub, faLinkedin, faYoutube, faWordpress);
 //? 03 - Création de l'app en passant le root component à la méthode createApp() */
 createApp(App)
 
-//^ 05 - J'ajoute les composants globaux nécessaires
+//^ 06 - J'ajoute les composants globaux nécessaires
 .component('font-awesome-icon', FontAwesomeIcon)
 
 //? 04 - Puis montage de l'application */

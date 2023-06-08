@@ -17,9 +17,9 @@
                 <SeparatorHorizontal></SeparatorHorizontal>
         
                 <ProjectsComponent></ProjectsComponent>
-
-                <SeparatorHorizontal></SeparatorHorizontal>
         </section>
+
+        <FooterComponent></FooterComponent>
 
 </template>
 
@@ -30,6 +30,7 @@ import AboutComponent from './components/About.vue';
 import HardskillsComponent from './components/Hardskills.vue';
 import SoftskillsComponent from './components/Softskills.vue';
 import ProjectsComponent from './components/Projects.vue';
+import FooterComponent from './components/Footer.vue';
 
 import SeparatorHorizontal from './components/SeparatorHorizontal.vue';
 
@@ -40,6 +41,7 @@ export default {
                 HardskillsComponent,
                 SoftskillsComponent,
                 ProjectsComponent,
+                FooterComponent,
 
                 SeparatorHorizontal,
         },
