@@ -288,6 +288,27 @@
     margin: 5rem 0;
   }
 }
+.body .footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+.body .footer p {
+  line-height: 1.5rem;
+}
+.body .footer .qualification {
+  color: #E47A18;
+  font-weight: bold;
+}
+.body .footer .footer-link {
+  color: black;
+}
+.body .footer .footer-link:hover {
+  text-decoration: none;
+}
+
 .body .general-section p, .body .general-section li {
   font-size: 1rem;
   text-align: center;
@@ -486,14 +507,15 @@
   display: flex;
   justify-content: center;
 }
-.general-separator .separator-horizontal { /* Le séparateur apparaît en 1 seconde, 0.5 secondes la fin du vol en parapente à T+5secondes */
+.general-separator .separator-horizontal {
   height: 2px;
   background-image: linear-gradient(to right, #d2420f, #d64e0f, #d9590f, #dd6311, #e06d13, #e07619, #e17e1f, #e18626, #df8e31, #dd963c, #db9e47, #daa552);
   border-radius: 5px;
   margin: 1.5rem 0;
   opacity: 0; /* opacity finale fournie par l'animation */
   width: 1%; /* width finale fournie par l'animation */
-  animation: separatorHorizontal 1s 4.5s ease-in-out forwards; /* Fowards = empêche de retourner à l'état initial */
+  /* Le séparateur apparaît en 1.5 seconde, 1 seconde après le chargement de la page */
+  animation: separatorHorizontal 1.5s 1s ease-in-out forwards; /* Fowards = empêche de retourner à l'état initial */
 }
 
 @media all and (min-width: 768px) {

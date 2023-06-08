@@ -19,6 +19,8 @@
                 <ProjectsComponent></ProjectsComponent>
         </section>
 
+        <SeparatorHorizontal></SeparatorHorizontal>
+
         <FooterComponent></FooterComponent>
 
 </template>

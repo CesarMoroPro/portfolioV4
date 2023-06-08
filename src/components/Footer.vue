@@ -1,7 +1,9 @@
 <template>
-        <p>César Moro</p>
-        <p>Développeur JavaScript - Vue3.js - Node.js</p>
-        <p><a>https://cesar.moro.fr</a> - Copyright <span class="automatic-year">{{ year }}</span></p>
+        <section class="footer">
+                <p>César Moro</p>
+                <p class="qualification">Développeur JavaScript - Vue3.js - Node.js</p>
+                <p><a href="https://cesar-moro.fr" class="footer-link">https://cesar.moro.fr</a> - Copyright <span class="automatic-year">{{ year }}</span></p>
+        </section>
 </template>
 
 <script>

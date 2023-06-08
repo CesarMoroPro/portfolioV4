@@ -1,0 +1,27 @@
+.body {
+
+        .footer {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: $gutter-regular;
+
+                p {
+                        line-height: $gutter-large;
+                }
+                
+                .qualification {
+                        color: $orange-light;
+                        font-weight: bold;
+                }
+
+                .footer-link {
+                        color: black;
+                }
+
+                .footer-link:hover {
+                        text-decoration: none;
+                }
+        }
+}
