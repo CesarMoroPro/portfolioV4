@@ -16,6 +16,13 @@
                         text-align: center;
                 }
 
+                .general-h3 {
+                        font-size: $font-size-regular;
+                        text-align: center;
+                        color: $orange-light;
+                        text-transform: uppercase;
+                }
+
                 .general-about {
 
                         &__texts {
@@ -42,6 +49,8 @@
                 }
 
                 .general-skills {
+                        margin-top: $gutter-very-large;
+                        width: 100%;
 
                         &__all-skills {
                                 min-width: 230px;
@@ -54,7 +63,7 @@
                                 border-radius: 6px;
                                 box-shadow: rgba(rgba($orange-dark, 0.25), 0.25) 0px 13px 27px -5px, rgba(rgba($orange-light, 0.3), 0.3) 0px 8px 16px -8px;
                                 margin: $gutter-very-large auto;
-                                padding: $gutter-regular;
+                                padding: $gutter-small;
                         }
 
                         &__all-skills:hover {
@@ -202,7 +211,7 @@
                         .all-skills-section {
                                 display: flex;
                                 flex-direction: row;
-                                justify-content: space-between;
+                                justify-content: space-around;
                         }
 
                         .general-projects {
@@ -286,6 +295,10 @@
 
                         .general-h2 {
                                 font-size: $font-size-extra-large;
+                        }
+
+                        .general-h3 {
+                                font-size: $font-size-very-large;
                         }
                 }
         }

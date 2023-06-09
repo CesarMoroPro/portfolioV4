@@ -1,6 +1,6 @@
 <template>
         <section class="general-skills">
-                <h2 class="general-h2">Savoir-Faire / Hardskills</h2>
+                <h3 class="general-h3">Savoir-Faire / Hardskills</h3>
 
                 <div class="general-skills__all-skills">
                         <ul v-for="(el, i) in hardskillsList">
