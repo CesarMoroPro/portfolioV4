@@ -11,7 +11,7 @@
 
                         <div class="english-bio">
                                 <p class="general-texts"><span class="flags">🇬🇧</span> Coming from a professional RETRAINING with <a href="https://oclock.io/" target="blank" class="link-white link-background-orange">O'clock School</a> (Paris), I am available right now to put my skills to your benefit.</p>
-                                <p class="general-texts">In addition to the technical skills acquired during this <a href="https://oclock.io/formations/developpeur-web" target="blank" class="link-white link-background-orange">TRAINING</a>, I learned "how to learn" and I take pleasure in continuing to progress.</p>
+                                <p class="general-texts">In addition to the technical skills acquired during this <a href="https://oclock.io/formations/developpeur-web" target="blank" class="link-white link-background-orange">training</a>, I learned "how to learn" and I take pleasure in continuing to progress.</p>
                                 <p class="general-texts underline-orange">So, help us each other grow and evolve together !</p>
                         </div>
                 </div>

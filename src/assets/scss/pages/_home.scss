@@ -1,5 +1,19 @@
 .body {
 
+        .aside-social-icons {
+                display: flex;
+                flex-direction: column;
+                position: fixed;
+                top: 12rem;
+
+                &__icon-social {
+                        margin: $gutter-small 0;
+                        font-size: $font-size-large;
+                        color: $bg-color;
+                        background-image: $gradient-sunshine;
+                }
+        }
+
         .general-section {
 
                 p, li {
@@ -26,6 +40,8 @@
                 .general-about {
 
                         &__texts {
+                                margin-left: $gutter-very-large;
+                                margin-right: $gutter-regular;
 
                                 .french-bio {
                                         margin-bottom: $gutter-extra-large;
@@ -189,10 +205,39 @@
         }
 }
 
+//= LARGEUR 420px MINIMUM
+.body {
+
+        .aside-social-icons {
+
+                &__icon-social {
+                        font-size: $font-size-very-large;
+                }
+        }
+}
+
+//= LARGEUR 600px MINIMUM
+.body {
+
+        .aside-social-icons {
+
+                &__icon-social {
+                        font-size: $font-size-extra-large;
+                }
+        }
+}
+
 //= LARGEUR TABLET MINIMUM
 @media all and (min-width: ($mobile-max + 1)) {
 
         .body {
+
+                .aside-social-icons {
+
+                        &__icon-social {
+                                font-size: $font-size-ultra-large;
+                        }
+                }
 
                 .general-section {
 
