@@ -375,13 +375,14 @@
   align-items: center;
   border: solid 1px #E47A18;
   border-radius: 6px;
-  box-shadow: rgba(210, 66, 15, 0.25) 0px 13px 27px -5px, rgba(228, 122, 24, 0.3) 0px 8px 16px -8px;
+  box-shadow: rgba(210, 66, 15, 0.5) 0px 13px 27px -5px, rgba(228, 122, 24, 0.5) 0px 8px 16px -8px;
   margin: 2rem auto;
   padding: 0.5rem;
 }
 .body .general-section .general-skills__all-skills:hover {
   background-image: linear-gradient(to right, #d2420f, #d64e0f, #d9590f, #dd6311, #e06d13, #e07619, #e17e1f, #e18626, #df8e31, #dd963c, #db9e47, #daa552);
   color: white;
+  box-shadow: rgba(210, 66, 15, 0.9) 0px 13px 27px -5px, rgba(228, 122, 24, 0.9) 0px 8px 16px -8px;
 }
 .body .general-section .general-skills__one-skill {
   margin: 1rem 0.75rem;

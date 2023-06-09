@@ -21,7 +21,7 @@
 
 
 ## Aside Contact et Réseaux
-- Tout à faire
+- Créer la modale de contact
 
 
 # COMMIT :
