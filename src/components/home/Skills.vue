@@ -10,9 +10,11 @@
                         
                 </h2>
 
-                <div class="all-skills-section" v-show="isSkillsSectionOpen"> <!-- Styles définis dans "pages > _home.scss" -->
-                        <HardskillsComponent></HardskillsComponent>
-                        <SoftskillsComponent></SoftskillsComponent>
+                <div class="all-skills" v-show="isSkillsSectionOpen"> <!-- Styles définis dans "pages > _home.scss" -->
+                       <div class="all-skills__no-up-chevron">
+                               <HardskillsComponent></HardskillsComponent>
+                               <SoftskillsComponent></SoftskillsComponent>
+                       </div>
 
                         <a href="http://localhost:5173/#skills"><UpChevronComponent></UpChevronComponent></a>
                 </div>

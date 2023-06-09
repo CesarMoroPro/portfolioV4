@@ -315,18 +315,32 @@
                                 font-size: $font-size-extra-large;
                         }
 
-                        .all-skills-section {
-                                display: flex;
-                                flex-direction: row;
-                                justify-content: space-around;
+                        .general-up-chevron {
+
+                                &__container-up-chevron-icon {
+                                        border: solid 1px $orange-light;
+                                        background-image: $gradient-sunshine;
+                                        border-radius: 30px;
+                                        width: 40px;
+                                        height: 40px;
+        
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        
+                                        &__chevron-up-icon {
+                                                color: $pur-white;
+                                                font-size: $font-size-large;
+        
+                                                animation: jumpTheUpChevron 0.5s alternate;
+                                                animation-iteration-count: 10;
+                                        }
+                                }
                         }
 
                         .general-projects {
 
                                 &__all-projects {
-                                        flex-direction: row;
-                                        flex-wrap: wrap;
-                                        justify-content: center;
 
                                         &__one-project {
                                                 
@@ -421,6 +435,28 @@
 
                         .general-h3 {
                                 font-size: $font-size-very-large;
+                        }
+
+                        .all-skills {
+                                
+                                &__no-up-chevron {
+                                        display: flex;
+                                        flex-direction: row;
+                                        justify-content: center;
+                                }
+                        }
+
+                        .general-projects {
+
+                                &__all-projects {
+
+                                        &__no-up-chevron {
+                                                display: flex;;
+                                                flex-direction: row;
+                                                flex-wrap: wrap;
+                                                justify-content: center;
+                                        }
+                                }
                         }
 
                         .general-contact {

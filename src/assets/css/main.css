@@ -553,15 +553,21 @@
   .body .general-section .flags {
     font-size: 2rem;
   }
-  .body .general-section .all-skills-section {
+  .body .general-section .general-up-chevron__container-up-chevron-icon {
+    border: solid 1px #E47A18;
+    background-image: linear-gradient(to right, #d2420f, #d64e0f, #d9590f, #dd6311, #e06d13, #e07619, #e17e1f, #e18626, #df8e31, #dd963c, #db9e47, #daa552);
+    border-radius: 30px;
+    width: 40px;
+    height: 40px;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-  }
-  .body .general-section .general-projects__all-projects {
-    flex-direction: row;
-    flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
+  }
+  .body .general-section .general-up-chevron__container-up-chevron-icon__chevron-up-icon {
+    color: #ffffff;
+    font-size: 1.25rem;
+    animation: jumpTheUpChevron 0.5s alternate;
+    animation-iteration-count: 10;
   }
   .body .general-section .general-projects__all-projects__one-project__normal-display {
     width: 500px;
@@ -612,6 +618,17 @@
   }
   .body .general-section .general-h3 {
     font-size: 1.5rem;
+  }
+  .body .general-section .all-skills__no-up-chevron {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .body .general-section .general-projects__all-projects__no-up-chevron {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
   }
   .body .general-section .general-contact__contact-device__contact-icon {
     margin-right: 2rem;
