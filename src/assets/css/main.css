@@ -372,14 +372,16 @@
 }
 .body .general-section .general-up-chevron__container-up-chevron-icon {
   border: solid 1px #E47A18;
+  background-image: linear-gradient(to right, #d2420f, #d64e0f, #d9590f, #dd6311, #e06d13, #e07619, #e17e1f, #e18626, #df8e31, #dd963c, #db9e47, #daa552);
+  border-radius: 30px;
   width: 30px;
   height: 30px;
   display: flex;
   justify-content: center;
-  align-items: flex-end;
+  align-items: center;
 }
 .body .general-section .general-up-chevron__container-up-chevron-icon__chevron-up-icon {
-  color: #E47A18;
+  color: #ffffff;
   animation: jumpTheUpChevron 0.5s alternate;
   animation-iteration-count: 10;
 }

@@ -16,7 +16,6 @@
 
 
 ## Section Projects
-- Flèche de retour vers le titre
 - Filtres
 
 

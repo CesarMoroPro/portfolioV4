@@ -59,15 +59,17 @@
 
                         &__container-up-chevron-icon {
                                 border: solid 1px $orange-light;
+                                background-image: $gradient-sunshine;
+                                border-radius: 30px;
                                 width: 30px;
                                 height: 30px;
 
                                 display: flex;
                                 justify-content: center;
-                                align-items: flex-end;
+                                align-items: center;
                                 
                                 &__chevron-up-icon {
-                                        color: $orange-light;
+                                        color: $pur-white;
 
                                         animation: jumpTheUpChevron 0.5s alternate;
                                         animation-iteration-count: 10;
