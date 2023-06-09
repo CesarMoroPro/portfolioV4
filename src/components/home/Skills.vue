@@ -22,7 +22,7 @@
 <script>
 import HardskillsComponent from './Hardskills.vue';
 import SoftskillsComponent from './Softskills.vue';
-import UpChevronComponent from './UpChevron.vue';
+import UpChevronComponent from '../visuals/UpChevron.vue';
 
 export default {
         components: {

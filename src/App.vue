@@ -20,15 +20,15 @@
 
 <script>
 // Import des SFC
-import HeaderComponent from './components/Header.vue';
-import AboutComponent from './components/About.vue';
-import SkillsComponent from './components/Skills.vue';
-import ProjectsComponent from './components/Projects.vue';
-import ContactComponent from './components/Contact.vue';
-import FooterComponent from './components/Footer.vue';
+import HeaderComponent from './components/layouts/Header.vue';
+import AboutComponent from './components/home/About.vue';
+import SkillsComponent from './components/home/Skills.vue';
+import ProjectsComponent from './components/home/Projects.vue';
+import ContactComponent from './components/generals/Contact.vue';
+import FooterComponent from './components/layouts/Footer.vue';
 
-import SocialComponent from './components/Social.vue';
-import SeparatorHorizontal from './components/SeparatorHorizontal.vue';
+import SocialComponent from './components/generals/Social.vue';
+import SeparatorHorizontal from './components/visuals/SeparatorHorizontal.vue';
 
 export default {
         components: {

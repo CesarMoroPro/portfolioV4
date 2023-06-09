@@ -62,15 +62,15 @@ En faisant un import des images, le build se fait correctement.
 https://cloudinary.com/blog/handle-image-asset-bundling-using-vite-in-vuejs
 */
 // import imgPortfolioV4 from "../assets/img/miniatures-projets/portfolioV4";
-import imgHelloMacros from "../assets/img/miniatures-projets/hello-macros/hello-macros.png";
-import imgPortfolioV3 from "../assets/img/miniatures-projets/portfolioV3/portfolioV3.png";
-import imgTodoList from "../assets/img/miniatures-projets/todo-list/todo-list.png";
-import imgAcmWeb from "../assets/img/miniatures-projets/acmweb/acmweb.png";
-import imgFreeOcean from "../assets/img/miniatures-projets/free-ocean/free-ocean.png";
-import imgDevnest from "../assets/img/miniatures-projets/devnest/devnest.jpg";
+import imgHelloMacros from "../../assets/img/miniatures-projets/hello-macros/hello-macros.png";
+import imgPortfolioV3 from "../../assets/img/miniatures-projets/portfolioV3/portfolioV3.png";
+import imgTodoList from "../../assets/img/miniatures-projets/todo-list/todo-list.png";
+import imgAcmWeb from "../../assets/img/miniatures-projets/acmweb/acmweb.png";
+import imgFreeOcean from "../../assets/img/miniatures-projets/free-ocean/free-ocean.png";
+import imgDevnest from "../../assets/img/miniatures-projets/devnest/devnest.jpg";
 
 /* Import de SFC */
-import UpChevronComponent from "./UpChevron.vue";
+import UpChevronComponent from "../visuals/UpChevron.vue";
 
 
 

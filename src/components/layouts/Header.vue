@@ -42,15 +42,13 @@
 /* Importer des assets de cette manière évite les erreurs lors du build de l'application,
 alors qu'en les ajoutant directement dans l'attribut en html, elles se seront pas forcément compilées.
 */
-import profilPicture from '../assets/img/avatar/profil-vw-modif.jpg';
-import montainLogo from '../assets/img/illustrations/logo-montagne-nobg.png';
-import parapenteLogo from '../assets/img/illustrations/logo-parapente-nobg.png';
+import montainLogo from '../../assets/img/illustrations/logo-montagne-nobg.png';
+import parapenteLogo from '../../assets/img/illustrations/logo-parapente-nobg.png';
 
 export default {
         data() {
                 return {
                         /* Images */
-                        profilPicture,
                         montainLogo,
                         parapenteLogo,
                         /* Autres data */

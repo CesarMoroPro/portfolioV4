@@ -26,7 +26,7 @@
 </template>
 
 <script>
-import UpChevronComponent from './UpChevron.vue';
+import UpChevronComponent from '../visuals/UpChevron.vue';
 
 export default {
         data() {
