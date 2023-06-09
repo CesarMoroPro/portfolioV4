@@ -76,7 +76,7 @@ export default {
                                         date: "30/05/2023",
                                         image: imgHelloMacros,
                                         technos: [
-                                                "Html", "Css - Sass", "Vue3.js", "Vite.js", "Git", "Responsive",
+                                                "Html", "Scss", "Vue3.js", "Vite.js", "Git", "Responsive",
                                         ],
                                         finition: "front-end",
                                         excerpt: "Ce projet est un calculateur de macros-nutriments, fonctionnel et basé sur de vraies formules scientifiques. Un Back-end en Node.js avec consommation d'API est en cours de développement.",
@@ -96,7 +96,7 @@ export default {
                                         date: "23/03/2023",
                                         image: imgPortfolioV3,
                                         technos: [
-                                                "HTML", "CSS", "Vue.js 3",
+                                                "Html", "Scss", "Vue.js 3", "Responsive",
                                         ],
                                         finition: "front-end",
                                         excerpt: "Ce projet est mon portfolio Version 3. La V4.0 étant maintenant déployée, cette V3.0. statique reste consultable mais n'est plus maintenue.",
@@ -117,7 +117,7 @@ export default {
                                         date: "28/02/2023",
                                         image: imgTodoList,
                                         technos: [
-                                                "HTML", "CSS", "JavaScript"
+                                                "Html", "Scss", "JavaScript"
                                         ],
                                         finition: "front-end",
                                         excerpt: "Traditionnel projet pour tout développeur junior, je n'ai pu y échapper. Alors, je me suis laissé aller sur le style. Une version Full avec un back-end géré en Node.js arrivera dans une version ultérieure.",
@@ -158,7 +158,7 @@ export default {
                                         date: "01/10/2022",
                                         image: imgFreeOcean,
                                         technos: [
-                                                "HTML", "CSS", "JavaScript"
+                                                "html", "Scss", " Vanilla JavaScript"
                                         ],
                                         finition: "front-end",
                                         excerpt: "Projet réalisé en Vanilla JavaScript, dont l'objectif était de développer la programmation fonctionnelle. Ce mini-jeu nécessite une version 1.2 afin de corriger quelques petits bugs. Projet non-responsive, je vous conseille de l'essayer sur ordinateur. ⚠️ ATTENTION : le repo Github n'est pas à jour suite à de nombreuses mauvaises manipulations.",
@@ -179,7 +179,7 @@ export default {
                                         date: "21/12/2020",
                                         image: imgDevnest,
                                         technos: [
-                                                "HTML", "CSS", "JavaScript", "PHP", "SQL", "WordPress (code)",
+                                                "Html", "Scss", "JavaScript", "PHP", "SQL", "WordPress (code)",
                                         ],
                                         finition: "fullstack",
                                         excerpt: "Projet de fin de formation réalisé en pair-programming, en conditions réelles de travail en entreprise. Formation Développeur Web et Web Mobile de 6 mois, au sein de l'école O'clock. Ce projet n'a pas été déployé, seule la vidéo de présentation est disponible. N'ayant pas été le LeadDev sur ce projet, je n'ai pas accès au repo Github.",

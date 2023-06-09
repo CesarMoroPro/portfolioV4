@@ -9,6 +9,8 @@
                 <SkillsComponent></SkillsComponent>
                 <SeparatorHorizontal></SeparatorHorizontal>
                 <ProjectsComponent></ProjectsComponent>
+                <SeparatorHorizontal></SeparatorHorizontal>
+                <ContactComponent></ContactComponent>
         </section>
 
         <SeparatorHorizontal></SeparatorHorizontal>
@@ -22,6 +24,7 @@ import HeaderComponent from './components/Header.vue';
 import AboutComponent from './components/About.vue';
 import SkillsComponent from './components/Skills.vue';
 import ProjectsComponent from './components/Projects.vue';
+import ContactComponent from './components/Contact.vue';
 import FooterComponent from './components/Footer.vue';
 
 import SocialComponent from './components/Social.vue';
@@ -33,6 +36,7 @@ export default {
                 AboutComponent,
                 SkillsComponent,
                 ProjectsComponent,
+                ContactComponent,
                 FooterComponent,
 
                 SocialComponent,

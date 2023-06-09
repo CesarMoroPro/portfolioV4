@@ -5,6 +5,7 @@
 
 ## Section globale
 - Mutualiser les fonctions "@click="openSection..." pour chaque titre h2, avec argument
+- icone pour cliquer sur les titres
 
 
 ## Section About

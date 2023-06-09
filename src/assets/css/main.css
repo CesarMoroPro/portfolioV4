@@ -472,6 +472,23 @@
 .body .general-section .general-projects__all-projects__one-project__card-hovered__icons .projects-icons .icon-size {
   font-size: 1rem;
 }
+.body .general-section .general-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: cente;
+}
+.body .general-section .general-contact__contact-device {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+}
+.body .general-section .general-contact__contact-device__contact-icon {
+  color: #E47A18;
+  margin-right: 1rem;
+  font-size: 1.25rem;
+}
 
 .body .aside-social-icons__icon-social {
   font-size: 1.5rem;
@@ -536,6 +553,13 @@
   .body .general-section .general-projects__all-projects__one-project__card-hovered__icons .projects-icons .icon-size {
     font-size: 1.5rem;
   }
+  .body .general-section .general-contact__contact-device__contact-icon {
+    margin-right: 1.5rem;
+    font-size: 1.5rem;
+  }
+  .body .general-section .general-contact__contact-device__info-text {
+    font-size: 1.25rem;
+  }
 }
 @media all and (min-width: 1024px) {
   .body .general-section p, .body .general-section li {
@@ -546,6 +570,10 @@
   }
   .body .general-section .general-h3 {
     font-size: 1.5rem;
+  }
+  .body .general-section .general-contact__contact-device__contact-icon {
+    margin-right: 2rem;
+    font-size: 2rem;
   }
 }
 .general-separator {

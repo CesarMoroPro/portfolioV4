@@ -16,9 +16,9 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 /* import specific icons */
 import { faGithub, faSquareGithub, faLinkedin, faYoutube, faWordpress } from '@fortawesome/free-brands-svg-icons';
 import { } from '@fortawesome/free-regular-svg-icons';
-import { faSquareEnvelope, faBars, faGlobe } from '@fortawesome/free-solid-svg-icons';
+import { faSquareEnvelope, faBars, faGlobe, faMobileScreenButton } from '@fortawesome/free-solid-svg-icons';
 /* add icons to the library */
-library.add(faSquareEnvelope, faBars, faGlobe, faGithub, faSquareGithub, faLinkedin, faYoutube, faWordpress);
+library.add(faSquareEnvelope, faMobileScreenButton, faBars, faGlobe, faGithub, faSquareGithub, faLinkedin, faYoutube, faWordpress);
 
 //? 03 - Création de l'app en passant le root component à la méthode createApp() */
 createApp(App)

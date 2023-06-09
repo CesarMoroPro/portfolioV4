@@ -203,6 +203,27 @@
                                 }
                         }
                 }
+
+                .general-contact {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: cente;
+                        
+                        &__contact-device {
+                                display: flex;
+                                flex-direction: row;
+                                justify-content: center;
+                                align-items: center;
+                                margin: $gutter-regular;
+
+                                &__contact-icon {
+                                        color: $orange-light;
+                                        margin-right: $gutter-regular;
+                                        font-size: $font-size-large;
+                                }
+                        }
+
+                }
         }
 }
 
@@ -324,6 +345,21 @@
                                         }
                                 }
                         }
+
+                        .general-contact {
+
+                                &__contact-device {
+
+                                        &__contact-icon {
+                                                margin-right: $gutter-large;
+                                                font-size: $font-size-very-large;
+                                        }
+
+                                        &__info-text {
+                                                font-size: $font-size-large;
+                                        }
+                                }
+                        }
                 }
         }
 }
@@ -345,6 +381,17 @@
 
                         .general-h3 {
                                 font-size: $font-size-very-large;
+                        }
+
+                        .general-contact {
+
+                                &__contact-device {
+
+                                        &__contact-icon {
+                                                margin-right: $gutter-very-large;
+                                                font-size: $font-size-extra-large;
+                                        }
+                                }
                         }
                 }
         }
