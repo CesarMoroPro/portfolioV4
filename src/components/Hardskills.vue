@@ -1,8 +1,8 @@
 <template>
-        <section class="general-skills" @click="openSection">
+        <section class="general-skills">
                 <h2 class="general-h2">Savoir-Faire / Hardskills</h2>
 
-                <div class="general-skills__all-skills" v-show="isSkillsSectionOpen">
+                <div class="general-skills__all-skills">
                         <ul v-for="(el, i) in hardskillsList">
                                 <li class="general-skills__one-skill">{{ el.name }}</li>
                         </ul>
@@ -16,8 +16,6 @@
 export default {
         data() {
                 return {
-                        isSkillsSectionOpen: false,
-
                         /* hardskillsList: 
                         N1 : HTML, CSS, JS Vanilla, PHP, Node.js, SQL, NoSQL 
                         N2 : SCSS / Sass, Bootstrap, Vue3.js, jQuery, Express.js, WordPress No-Code, WordPress Development, 
@@ -53,16 +51,6 @@ export default {
                                         name: "Git & GitHub",
                                 },
                         ]
-                }
-        },
-
-        methods: {
-                openSection() {
-                        if (this.isSkillsSectionOpen === false) {
-                                this.isSkillsSectionOpen = true;
-                        } else {
-                                this.isSkillsSectionOpen = false;
-                        }
                 }
         },
 }

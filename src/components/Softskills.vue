@@ -1,10 +1,10 @@
 <template>
-        <section class="general-skills" @click="openSection">
+        <section class="general-skills">
                 <h2 class="general-h2">Savoir-Être / Softskills</h2>
 
-                <div class="general-skills__all-skills" v-show="isSkillsSectionOpen">
+                <div class="general-skills__all-skills">
                         <ul v-for="(el, i) in softskillsList">
-                                <li class="general-skills__one-skill">{{ el.name }}</li>
+                                <li class="general-skills__one-skill">{{ el }}</li>
                         </ul>
                 </div>
         </section>
@@ -16,78 +16,21 @@
 export default {
         data() {
                 return {
-                        isSkillsSectionOpen: false,
-
-                        // softskillsList: ["Curiosité", "Esprit d'analyse", "Esprit critique", "Prise de recul", "Patience", "Esprit d'équipe", "Empathie", "Humilité", "Remise en question", "Culture de l'apprentissage", "Pair-programming"],
-                        softskillsList: [
-                                {
-                                        id: "",
-                                        name: "Culture de l'apprentissage",
-                                },
-
-                                {
-                                        id: "",
-                                        name: "Curiosté",
-                                },
-
-                                {
-                                        id: "",
-                                        name: "Esprit d'analyse",
-                                },
-
-                                {
-                                        id: "",
-                                        name: "Esprit critique",
-                                },
-
-                                {
-                                        id: "",
-                                        name: "Patience",
-                                },
-
-                                {
-                                        id: "",
-                                        name: "Prise de recul",
-                                },
-
-                                {
-                                        id: "",
-                                        name: "Esprit d'équipe",
-                                },
-
-                                {
-                                        id: "",
-                                        name: "Empathie",
-                                },
-
-                                {
-                                        id: "",
-                                        name: "Humilité",
-                                },
-
-                                {
-                                        id: "",
-                                        name: "Remise en question",
-                                },
-
-                                { 
-                                        id: "",
-                                        name: "Pair-programming",
-                                }
+                        softskillsList: [ 
+                                "Culture de l'apprentissage",
+                                "Curiosté",
+                                "Esprit d'analyse",
+                                "Esprit critique",
+                                "Patience",
+                                "Prise de recul",
+                                "Esprit d'équipe",
+                                "Empathie",
+                                "Humilité",
+                                "Remise en question",
+                                "Pair-programming",
                         ]
                 }
         },
-
-
-        methods: {
-                openSection() {
-                        if (this.isSkillsSectionOpen === false) {
-                                this.isSkillsSectionOpen = true;
-                        } else {
-                                this.isSkillsSectionOpen = false;
-                        }
-                }
-        }
 }
 
 </script>

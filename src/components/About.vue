@@ -6,7 +6,7 @@
                         <div class="french-bio">
                                 <p class="general-texts"><span class="flags">🇫🇷 </span>Issu d'une reconversion professionnelle en télé-présentiel avec l'&nbsp;<a href="https://oclock.io/" target="blank" class="link-white link-background-orange">École O'clock</a> (Paris), je suis dès maintenant disponible pour mettre mes compétences à votre profit.</p>
                                 <p class="general-texts">En plus des compétences techniques acquises lors de cette <a href="https://oclock.io/formations/developpeur-web" target="blank" class="link-white link-background-orange">formation</a>, j'y ai appris "comment apprendre" et je prends du plaisir à continuer de progresser.</p>
-                                <p class="general-texts underline-orange">Alors, aidons-nous à grandir et à évoluer ensemble !</p>
+                                <p class="general-texts underline-orange">Alors ensemble, aidons-nous à grandir et à évoluer !</p>
                         </div>
 
                         <div class="english-bio">

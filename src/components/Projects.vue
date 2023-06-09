@@ -79,7 +79,7 @@ export default {
                                                 "Html", "Css - Sass", "Vue3.js", "Vite.js", "Git", "Responsive",
                                         ],
                                         finition: "front-end",
-                                        excerpt: "Ce projet est un calculateur de macros-nutriments, fonctionnel et basé sur de vraies formules scientifiques. Le Front-end est développé avec Vue3.js. Quant au Back-end, il est prévu de le réaliser en Node.js avec consommation d'API (en cours).",
+                                        excerpt: "Ce projet est un calculateur de macros-nutriments, fonctionnel et basé sur de vraies formules scientifiques. Un Back-end en Node.js avec consommation d'API est en cours de développement.",
                                         projectOnLine: true,
                                         linkProject: "https://hello-macros.cesar-moro.fr",
                                         githubLink: "https://github.com/CesarMoroPro/macro-nutrition",
@@ -89,17 +89,17 @@ export default {
                                         wordpressIcon: false,
                                 },
 
-                                /* Portfolio */
+                                /* Portfolio V3*/
                                 {
                                         isCardHovered: false,
                                         title: "Mon Portfolio V3",
                                         date: "23/03/2023",
                                         image: imgPortfolioV3,
                                         technos: [
-                                                "HTML", "CSS", "JavaScript"
+                                                "HTML", "CSS", "Vue.js 3",
                                         ],
                                         finition: "front-end",
-                                        excerpt: "Ce projet est mon portfolio, sur lequel vous vous trouvez actuellement ! La V4.0 de mon portfolio étant maintenant déployée, cette V3.0. statique n'est plus maintenue.",
+                                        excerpt: "Ce projet est mon portfolio Version 3. La V4.0 étant maintenant déployée, cette V3.0. statique reste consultable mais n'est plus maintenue.",
                                         projectOnLine: true,
                                         linkProject: "https://cesar-moro.fr",
                                         githubLink: "https://github.com/CesarMoroPro/portfolio-Vue.js",
@@ -138,7 +138,7 @@ export default {
                                         date: "31/01/2023",
                                         image: imgAcmWeb,
                                         technos: [
-                                                "HTML", "CSS", "JavaScript", "PHP", "SQL",
+                                                "WordPress (NoCode, DIVI)",
                                         ],
                                         finition: "fullstack",
                                         excerpt: "Projet de site vitrine réalisé pour une rédactrice web, avec le CMS WordPress et le thème DIVI (en no-code).",

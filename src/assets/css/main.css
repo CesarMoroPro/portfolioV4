@@ -376,7 +376,7 @@
   width: 300px;
   text-align: center;
   margin-bottom: 0.75rem;
-  border: solid 2px #DAA552;
+  border: solid 2px rgba(228, 122, 24, 0.75);
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.75) 0px 5px 10px;
 }
