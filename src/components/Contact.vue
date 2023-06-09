@@ -1,6 +1,13 @@
 <template>
         <section class="general-contact">
-                <h2 id="contact" class="general-h2" @click="closeSection"><font-awesome-icon class="title-icon" :icon="['fas', 'circle-question']" />Contact</h2>
+                <h2 id="contact" class="general-h2" @click="closeSection">
+                        <div v-if="!isContactSectionOpen">
+                                <font-awesome-icon class="title-icon" :icon="['fas', 'circle-question']" />Contact<font-awesome-icon class="chevron-down-icon" :icon="['fas', 'chevron-down']" />
+                        </div>
+                        <div v-else>
+                                <font-awesome-icon class="title-icon" :icon="['fas', 'circle-question']" />Contact<font-awesome-icon class="cross-icon" :icon="['fas', 'xmark']" />
+                        </div>
+                </h2>
 
                 <div v-show="isContactSectionOpen">
                         <div class="general-contact__contact-device">

@@ -1,6 +1,13 @@
 <template>
         <section class="general-projects">
-                <h2 id="projects" class="general-h2" @click="openSection"><font-awesome-icon class="title-icon" :icon="['fas', 'laptop-code']" />Projets - Projects</h2>
+                <h2 id="projects" class="general-h2" @click="openSection">
+                <div v-if="!isProjectsSectionOpen">
+                        <font-awesome-icon class="title-icon" :icon="['fas', 'laptop-code']" />Projets - Projects<font-awesome-icon class="chevron-down-icon" :icon="['fas', 'chevron-down']" />
+                </div>
+                <div v-else>
+                        <font-awesome-icon class="title-icon" :icon="['fas', 'laptop-code']" />Projets - Projects<font-awesome-icon class="cross-icon" :icon="['fas', 'xmark']" />
+                </div>
+                </h2>
 
                 <section class="general-projects__all-projects" v-show="isProjectsSectionOpen">
                         <section class="general-projects__all-projects__one-project" v-for="(project, index) in projectsList" :key="index" @mouseover="cardHovered(index)" @mouseout="cardNotHovered(index)">

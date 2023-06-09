@@ -5,7 +5,6 @@
 
 ## Section globale
 - Mutualiser les fonctions "@click="openSection..." pour chaque titre h2, avec argument
-- icone pour cliquer sur les titres
 
 
 ## Section About
@@ -14,7 +13,6 @@
 
 ## Section Skills
 - Mutualiser la fonction qui ouvre / ferme les skills simultanément
-- Ajouter un h2 "Skills" dans le ROOT COMPONENT et transformer les actuels h2 hardskills et softskills en h3 dans leur SFC respectif
 
 
 ## Section Projects
@@ -25,7 +23,7 @@
 ## Section Contact
 - Ajouter photo
 
-
+#TODO : DARKMODE
 
 
 # COMMIT :

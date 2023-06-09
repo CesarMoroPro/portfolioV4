@@ -25,12 +25,19 @@
                         font-family: $font-secondary;
                         font-size: $font-size-large;
                         margin: $gutter-very-large $gutter-regular $gutter-large;
-                        color: $orange-dark;
+                        color: $orange-light;
                         cursor: pointer;
                         text-align: center;
 
                         .title-icon {
                                 margin-right: $gutter-regular;
+                                color: $orange-dark;
+                        }
+
+                        .chevron-down-icon, .cross-icon {
+                                margin-left: $gutter-very-large;
+                                font-size: $font-size-regular;
+                                color: $gold;
                         }
                 }
 

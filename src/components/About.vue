@@ -1,6 +1,13 @@
 <template>
         <section class="general-about">
-                <h2 id="about" class="general-h2" @click="openSection"><font-awesome-icon class="title-icon" :icon="['fas', 'user']" />À Propos - About</h2>
+                <h2 id="about" class="general-h2" @click="openSection">
+                        <div v-if="!isAboutSectionOpen">
+                                <font-awesome-icon class="title-icon" :icon="['fas', 'user']" />À Propos - About<font-awesome-icon class="chevron-down-icon" :icon="['fas', 'chevron-down']" />
+                        </div>
+                        <div v-else>
+                                <font-awesome-icon class="title-icon" :icon="['fas', 'user']" />À Propos - About<font-awesome-icon class="cross-icon" :icon="['fas', 'xmark']" />
+                        </div>
+                </h2>
 
                 <div class="general-about__texts" v-show="isAboutSectionOpen">
                         <div class="french-bio">

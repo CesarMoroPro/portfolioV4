@@ -333,12 +333,18 @@
   font-family: "Tsukimi Rounded", sans-serif;
   font-size: 1.25rem;
   margin: 2rem 1rem 1.5rem;
-  color: #D2420F;
+  color: #E47A18;
   cursor: pointer;
   text-align: center;
 }
 .body .general-section .general-h2 .title-icon {
   margin-right: 1rem;
+  color: #D2420F;
+}
+.body .general-section .general-h2 .chevron-down-icon, .body .general-section .general-h2 .cross-icon {
+  margin-left: 2rem;
+  font-size: 1rem;
+  color: #DAA552;
 }
 .body .general-section .general-h3 {
   font-size: 1rem;
