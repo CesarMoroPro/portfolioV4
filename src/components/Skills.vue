@@ -13,6 +13,8 @@
                 <div class="all-skills-section" v-show="isSkillsSectionOpen"> <!-- Styles définis dans "pages > _home.scss" -->
                         <HardskillsComponent></HardskillsComponent>
                         <SoftskillsComponent></SoftskillsComponent>
+
+                        <a href="http://localhost:5173/#skills"><UpChevronComponent></UpChevronComponent></a>
                 </div>
         </section>
 </template>
@@ -20,11 +22,13 @@
 <script>
 import HardskillsComponent from './Hardskills.vue';
 import SoftskillsComponent from './Softskills.vue';
+import UpChevronComponent from './UpChevron.vue';
 
 export default {
         components: {
                 HardskillsComponent,
                 SoftskillsComponent,
+                UpChevronComponent,
         },
 
         data() {
@@ -41,7 +45,7 @@ export default {
                                 this.isSkillsSectionOpen = false;
                         }
                 }
-        }
+        },
 }
 
 </script>

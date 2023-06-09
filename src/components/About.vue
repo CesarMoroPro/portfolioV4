@@ -21,11 +21,15 @@
                                 <p class="general-texts">In addition to the technical skills acquired during this <a href="https://oclock.io/formations/developpeur-web" target="blank" class="link-white link-background-orange">training</a>, I learned "how to learn" and I take pleasure in continuing to progress.</p>
                                 <p class="general-texts underline-orange">So, help us each other grow and evolve together !</p>
                         </div>
+
+                        <a href="http://localhost:5173/#about"><UpChevronComponent></UpChevronComponent></a>
                 </div>
+
         </section>
 </template>
 
 <script>
+import UpChevronComponent from './UpChevron.vue';
 
 export default {
         data() {
@@ -42,6 +46,10 @@ export default {
                                 this.isAboutSectionOpen = false;
                         }
                 }
+        },
+
+        components: {
+                UpChevronComponent,
         }
 }
 

@@ -53,6 +53,16 @@
     width: 70%;
   }
 }
+@keyframes jumpTheUpChevron {
+  from {
+    margin-top: 10px;
+    font-size: 1rem;
+  }
+  to {
+    margin-bottom: 15px;
+    font-size: 0.75rem;
+  }
+}
 .body {
   padding: 5px 5px 20px;
   background-color: #efefef;
@@ -354,6 +364,24 @@
 }
 .body .general-section .general-h3 .title-icon {
   margin-right: 0.5rem;
+}
+.body .general-section .general-up-chevron {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.body .general-section .general-up-chevron__container-up-chevron-icon {
+  border: solid 1px #E47A18;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.body .general-section .general-up-chevron__container-up-chevron-icon__chevron-up-icon {
+  color: #E47A18;
+  animation: jumpTheUpChevron 0.5s alternate;
+  animation-iteration-count: 10;
 }
 .body .general-section .general-about__texts {
   margin-left: 2rem;

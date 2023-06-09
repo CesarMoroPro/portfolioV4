@@ -10,7 +10,8 @@
                 </h2>
 
                 <section class="general-projects__all-projects" v-show="isProjectsSectionOpen">
-                        <section class="general-projects__all-projects__one-project" v-for="(project, index) in projectsList" :key="index" @mouseover="cardHovered(index)" @mouseout="cardNotHovered(index)">
+                        
+                        <div class="general-projects__all-projects__one-project" v-for="(project, index) in projectsList" :key="index" @mouseover="cardHovered(index)" @mouseout="cardNotHovered(index)">
                                 
                                 <!--^ CARTE NON SURVOLÉE  -->
                                 <div class="general-projects__all-projects__one-project__normal-display" v-show="!project.isCardHovered">
@@ -45,8 +46,11 @@
 
                                 </div>
 
-                        </section>
+                        </div>
+
+                        <a href="http://localhost:5173/#projects"><UpChevronComponent></UpChevronComponent></a>
                 </section>
+
         </section>
 </template>
 
@@ -64,6 +68,9 @@ import imgTodoList from "../assets/img/miniatures-projets/todo-list/todo-list.pn
 import imgAcmWeb from "../assets/img/miniatures-projets/acmweb/acmweb.png";
 import imgFreeOcean from "../assets/img/miniatures-projets/free-ocean/free-ocean.png";
 import imgDevnest from "../assets/img/miniatures-projets/devnest/devnest.jpg";
+
+/* Import de SFC */
+import UpChevronComponent from "./UpChevron.vue";
 
 
 
@@ -221,6 +228,10 @@ export default {
                         /* Je passe la variable isCardHovered du projet ciblé à false */
                         this.projectsList[targetIndex].isCardHovered = false;
                 },
+        },
+
+        components: {
+                UpChevronComponent,
         }
 }
 

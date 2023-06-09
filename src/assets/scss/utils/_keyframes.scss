@@ -1,3 +1,4 @@
+//^ ANIMATIONS DU PARAPENTE
 @keyframes parapenteSmall {
         0% {
                 height: 40px;
@@ -46,6 +47,7 @@
         }
 }
 
+//^ ANIMATIONS DES SÉPARATEURS
 @keyframes separatorHorizontal {
         from {
                 opacity: 0;
@@ -55,5 +57,18 @@
         to {
                 opacity: 1;
                 width: 70%;
+        }
+}
+
+//^ ANIMATIONS DE BOUTONS
+@keyframes jumpTheUpChevron {
+        from {
+                margin-top: 10px;
+                font-size: $font-size-regular;
+        }
+        
+        to {
+                margin-bottom: 15px;
+                font-size: $font-size-medium; 
         }
 }

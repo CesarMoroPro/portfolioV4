@@ -19,11 +19,14 @@
                                 <div><font-awesome-icon class="general-contact__contact-device__contact-icon" :icon="['fas', 'square-envelope']" /></div>
                                 <div class="general-contact__contact-device__info-text">cesar.moro.dev@gmail.com</div>
                         </div>
+
+                        <a href="http://localhost:5173/#skills"><UpChevronComponent></UpChevronComponent></a>
                 </div>
         </section>
 </template>
 
 <script>
+import UpChevronComponent from './UpChevron.vue';
 
 export default {
         data() {
@@ -40,6 +43,10 @@ export default {
                                 this.isContactSectionOpen = true;
                         }
                 }
+        },
+
+        components: {
+                UpChevronComponent,
         }
 }
 
