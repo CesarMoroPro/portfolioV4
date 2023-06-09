@@ -337,11 +337,17 @@
   cursor: pointer;
   text-align: center;
 }
+.body .general-section .general-h2 .title-icon {
+  margin-right: 1rem;
+}
 .body .general-section .general-h3 {
   font-size: 1rem;
   text-align: center;
   color: #E47A18;
   text-transform: uppercase;
+}
+.body .general-section .general-h3 .title-icon {
+  margin-right: 0.5rem;
 }
 .body .general-section .general-about__texts {
   margin-left: 2rem;

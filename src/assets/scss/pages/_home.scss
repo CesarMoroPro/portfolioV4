@@ -28,6 +28,10 @@
                         color: $orange-dark;
                         cursor: pointer;
                         text-align: center;
+
+                        .title-icon {
+                                margin-right: $gutter-regular;
+                        }
                 }
 
                 .general-h3 {
@@ -35,6 +39,10 @@
                         text-align: center;
                         color: $orange-light;
                         text-transform: uppercase;
+
+                        .title-icon {
+                                margin-right: $gutter-small;
+                        }
                 }
 
                 .general-about {

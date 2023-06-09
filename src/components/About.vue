@@ -1,6 +1,6 @@
 <template>
         <section class="general-about">
-                <h2 id="about" class="general-h2" @click="openSection">À Propos / About</h2>
+                <h2 id="about" class="general-h2" @click="openSection"><font-awesome-icon class="title-icon" :icon="['fas', 'user']" />À Propos - About</h2>
 
                 <div class="general-about__texts" v-show="isAboutSectionOpen">
                         <div class="french-bio">

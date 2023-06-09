@@ -1,6 +1,6 @@
 <template>
         <section class="general-skills">
-                <h3 class="general-h3">Savoir-Être / Softskills</h3>
+                <h3 class="general-h3"><font-awesome-icon class="title-icon" :icon="['fas', 'handshake-angle']" />Savoir-Être - Softskills</h3>
 
                 <div class="general-skills__all-skills">
                         <ul v-for="(el, i) in softskillsList">

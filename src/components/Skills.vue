@@ -1,6 +1,6 @@
 <template>
         <section id="skills" class="general-skills">
-                <h2 id="skills" class="general-h2" @click="openSection">Compétences / Skills</h2>
+                <h2 id="skills" class="general-h2" @click="openSection"><font-awesome-icon class="title-icon" :icon="['fas', 'fire-flame-curved']" />Compétences - Skills</h2>
 
                 <div class="all-skills-section" v-show="isSkillsSectionOpen"> <!-- Styles définis dans "pages > _home.scss" -->
                         <HardskillsComponent></HardskillsComponent>

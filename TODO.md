@@ -19,10 +19,13 @@
 
 ## Section Projects
 - Flèche de retour vers le titre
+- Filtres
 
 
-## Aside Contact et Réseaux
-- Créer la modale de contact
+## Section Contact
+- Ajouter photo
+
+
 
 
 # COMMIT :
