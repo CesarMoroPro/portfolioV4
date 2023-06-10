@@ -514,6 +514,49 @@
 .body .general-section .general-projects__all-projects__one-project__card-hovered__icons .projects-icons .icon-size {
   font-size: 1rem;
 }
+.body .general-section .general-filters {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.body .general-section .general-filters__all-filters {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 0.5rem;
+}
+.body .general-section .general-filters__all-filters__one-filter {
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+  padding: 6px;
+  text-decoration: underline;
+  cursor: pointer;
+  margin: 0 0.5rem;
+  text-align: center;
+}
+.body .general-section .general-filters__deselect-all {
+  font-size: 0.75rem;
+  cursor: pointer;
+  text-decoration: underline #E47A18;
+}
+.body .general-section .general-filters__deselect-all:hover {
+  text-decoration: none;
+}
+.body .general-section .general-filters .not-selected-filter {
+  background-image: none;
+  background-color: #ffffff;
+  color: #E47A18;
+  outline: solid 1px #E47A18;
+}
+.body .general-section .general-filters .selected-filter {
+  background-image: linear-gradient(to right, #d2420f, #d64e0f, #d9590f, #dd6311, #e06d13, #e07619, #e17e1f, #e18626, #df8e31, #dd963c, #db9e47, #daa552);
+  color: #ffffff;
+}
+.body .general-section .general-filters .not-selected-filter:hover, .body .general-section .general-filters .selected-filter:hover {
+  background-image: linear-gradient(to right, #fd9974, #fda177, #fda97a, #fdb07e, #fdb883, #fdbe89, #fdc590, #fdcb97, #fdd2a0, #fed9aa, #fedfb5, #ffe6bf);
+}
 .body .general-section .general-contact {
   display: flex;
   flex-direction: column;
@@ -601,6 +644,9 @@
   .body .general-section .general-projects__all-projects__one-project__card-hovered__icons .projects-icons .icon-size {
     font-size: 1.5rem;
   }
+  .body .general-section .general-filters__all-filters__one-filter {
+    margin: 0 0.75rem;
+  }
   .body .general-section .general-contact__contact-device__contact-icon {
     margin-right: 1.5rem;
     font-size: 1.5rem;
@@ -629,6 +675,14 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+  }
+  .body .general-section .general-filters__all-filters__one-filter {
+    font-size: 1.25rem;
+    padding: 9px;
+    margin: 0 0.75rem;
+  }
+  .body .general-section .general-filters__deselect-all {
+    font-size: 1rem;
   }
   .body .general-section .general-contact__contact-device__contact-icon {
     margin-right: 2rem;

@@ -244,6 +244,58 @@
                         }
                 }
 
+                .general-filters {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+
+                        &__all-filters {
+                                display: flex;
+                                flex-direction: row;
+                                justify-content: center;
+                                margin-bottom: $gutter-small;
+
+                                &__one-filter {
+                                        display: flex;
+                                        align-items: center;
+                                        border-radius: 4px;
+                                        padding: 6px;
+                                        text-decoration: underline;
+                                        cursor: pointer;
+                                        margin: 0 $gutter-small;
+                                        text-align: center;
+                                }
+                        }
+
+                        &__deselect-all {
+                                font-size: $font-size-medium;
+                                cursor: pointer;
+                                text-decoration: underline $orange-light;
+                        }
+
+                        &__deselect-all:hover {
+                                text-decoration: none;
+                        }
+
+                        
+                        .not-selected-filter {
+                                background-image: none;
+                                background-color: $pur-white;
+                                color: $orange-light;
+                                outline: solid 1px $orange-light;
+                        }
+                        
+                        .selected-filter {
+                                background-image: $gradient-sunshine;
+                                color: $pur-white;
+                        }
+
+                        .not-selected-filter:hover, .selected-filter:hover {
+                                background-image: $gradient-sunshine-very-light;
+                        }
+                }
+
                 .general-contact {
                         display: flex;
                         flex-direction: column;
@@ -400,6 +452,16 @@
                                 }
                         }
 
+                        .general-filters {
+        
+                                &__all-filters {
+        
+                                        &__one-filter {
+                                                margin: 0 $gutter-medium;
+                                        }
+                                }
+                        }
+
                         .general-contact {
 
                                 &__contact-device {
@@ -456,6 +518,22 @@
                                                 flex-wrap: wrap;
                                                 justify-content: center;
                                         }
+                                }
+                        }
+
+                        .general-filters {
+        
+                                &__all-filters {
+        
+                                        &__one-filter {
+                                                font-size: $font-size-large;
+                                                padding: 9px;
+                                                margin: 0 $gutter-medium;
+                                        }
+                                }
+                                
+                                &__deselect-all {
+                                        font-size: $font-size-regular;
                                 }
                         }
 

@@ -10,6 +10,8 @@
                 </h2>
 
                 <section class="general-projects__all-projects" v-show="isProjectsSectionOpen">
+                        <FiltersComponent></FiltersComponent>
+
                         <div class="general-projects__all-projects__no-up-chevron">
                                 
                                 <div class="general-projects__all-projects__one-project" v-for="(project, index) in projectsList" :key="index" @mouseover="cardHovered(index)" @mouseout="cardNotHovered(index)">
@@ -74,6 +76,7 @@ import imgFreeOcean from "../../assets/img/miniatures-projets/free-ocean/free-oc
 import imgDevnest from "../../assets/img/miniatures-projets/devnest/devnest.jpg";
 
 /* Import de SFC */
+import FiltersComponent from "./Filters.vue";
 import UpChevronComponent from "../visuals/UpChevron.vue";
 
 
@@ -235,6 +238,7 @@ export default {
         },
 
         components: {
+                FiltersComponent,
                 UpChevronComponent,
         }
 }
