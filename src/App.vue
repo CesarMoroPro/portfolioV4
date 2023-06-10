@@ -1,5 +1,6 @@
 <template>
         <HeaderComponent></HeaderComponent>
+        <!-- <DarkmodeComponent></DarkmodeComponent> -->
         <SocialComponent></SocialComponent>
         <SeparatorHorizontal></SeparatorHorizontal>
 
@@ -27,6 +28,7 @@ import ProjectsComponent from './components/home/Projects.vue';
 import ContactComponent from './components/generals/Contact.vue';
 import FooterComponent from './components/layouts/Footer.vue';
 
+import DarkmodeComponent from './components/visuals/Darkmode.vue';
 import SocialComponent from './components/generals/Social.vue';
 import SeparatorHorizontal from './components/visuals/SeparatorHorizontal.vue';
 
@@ -39,6 +41,7 @@ export default {
                 ContactComponent,
                 FooterComponent,
 
+                DarkmodeComponent,
                 SocialComponent,
                 SeparatorHorizontal,
         },

@@ -1,0 +1,74 @@
+.body {
+
+        .general-darkmode {
+
+                &__darkmode-container {
+                        width: 20px;
+                        height: 40px;
+                        border: solid 1px $gold;
+                        border-radius: 16px;
+                        position: fixed;
+                        top: 3%;
+                        left: 10px;
+
+                        &__darkmode-not-active-button {
+                                width:20px;
+                                height: 20px;
+                                border-radius: 16px;
+                                background-image: $gradient-sun-light;
+                                position: relative;
+                                top: 0;
+                        }
+
+                        &__darkmode-active-button {
+                                background-image: $gradient-moon;
+                                top: 50%;
+
+                                &__crater-1 {
+                                        width: 9.5px;
+                                        height: 9.5px;
+                                        border-radius: 30px;
+                                        box-shadow: -1.5px 1.5px 1px $grey-dark;
+                                        background-image: $gradient-moon-crater;
+                                        position: relative;
+                                        top: 1.5px;
+                                        left: 8px;
+                                }
+
+                                &__crater-2 {
+                                        width: 2.5px;
+                                        height: 2.5px;
+                                        border-radius: 30px;
+                                        box-shadow: -1.5px 1.5px 1px $grey-dark;
+                                        background-image: $gradient-moon-crater;
+                                        position: relative;
+                                        top: -8.5px;
+                                        left: 5px;
+                                }
+
+                                &__crater-3 {
+                                        width: 4px;
+                                        height: 4px;
+                                        border-radius: 30px;
+                                        box-shadow: -1px 1px 1px $grey-dark;
+                                        background-image: $gradient-moon-crater;
+                                        position: relative;
+                                        top: -2px;
+                                        left: 2px;
+                                }
+
+                                &__crater-4 {
+                                        width: 5.5px;
+                                        height: 5.5px;
+                                        border-radius: 30px;
+                                        box-shadow: -1.5px 1px 1px $grey-dark;
+                                        background-image: $gradient-moon-crater;
+                                        position: relative;
+                                        top: -3px;
+                                        left: 9px;
+                                }
+                        }
+                }
+
+        }
+}

@@ -10,7 +10,7 @@
                         margin: $gutter-small 0;
                         font-size: $font-size-large;
                         color: $bg-color;
-                        background-image: $gradient-sunshine;
+                        background-image: $gradient-sun;
                 }
         }
 
@@ -59,7 +59,7 @@
 
                         &__container-up-chevron-icon {
                                 border: solid 1px $orange-light;
-                                background-image: $gradient-sunshine;
+                                background-image: $gradient-sun;
                                 border-radius: 30px;
                                 width: 30px;
                                 height: 30px;
@@ -123,7 +123,7 @@
                         }
 
                         &__all-skills:hover {
-                                background-image: $gradient-sunshine;
+                                background-image: $gradient-sun;
                                 color: white;
                                 box-shadow: rgba($orange-dark, 0.9) 0px 13px 27px -5px, rgba($orange-light, 0.9)  0px 8px 16px -8px;
                         }
@@ -189,7 +189,7 @@
                                                 width: 300px;
                                                 height: 330px;
                                                 margin-bottom: $gutter-medium;
-                                                background-image: $gradient-sunshine;
+                                                background-image: $gradient-sun;
                                                 border-radius: 10px;
                                                 box-shadow: rgba(0, 0, 0, 0.75) 0px 7px 12px;
 
@@ -291,12 +291,12 @@
                         }
                         
                         .selected-filter {
-                                background-image: $gradient-sunshine;
+                                background-image: $gradient-sun;
                                 color: $pur-white;
                         }
 
                         .not-selected-filter:hover, .selected-filter:hover {
-                                background-image: $gradient-sunshine-very-light;
+                                background-image: $gradient-sun-very-light;
                         }
                 }
 
@@ -375,7 +375,7 @@
 
                                 &__container-up-chevron-icon {
                                         border: solid 1px $orange-light;
-                                        background-image: $gradient-sunshine;
+                                        background-image: $gradient-sun;
                                         border-radius: 30px;
                                         width: 40px;
                                         height: 40px;

@@ -21,10 +21,17 @@ $bg-color: #efefef;
 $orange-light: #E47A18;
 $orange-dark: #D2420F;
 $gold: #DAA552;
+$grey-light: #B7B6B6;
+$grey-medium: #8B8987;
+$grey-dark: #4E4B4A;
+$grey-very-dark: #333332;
 
-$gradient-sunshine: linear-gradient(to right, #d2420f, #d64e0f, #d9590f, #dd6311, #e06d13, #e07619, #e17e1f, #e18626, #df8e31, #dd963c, #db9e47, #daa552);
-$gradient-sunshine-light: linear-gradient(to right, #ff7d4e, #ff8852, #ff9357, #ff9e5e, #ffa865, #ffb06c, #ffb874, #ffbf7c, #ffc685, #ffcd8f, #ffd499, #ffdba3);
-$gradient-sunshine-very-light: linear-gradient(to right, #fd9974, #fda177, #fda97a, #fdb07e, #fdb883, #fdbe89, #fdc590, #fdcb97, #fdd2a0, #fed9aa, #fedfb5, #ffe6bf);
+$gradient-sun: linear-gradient(to right, #d2420f, #d64e0f, #d9590f, #dd6311, #e06d13, #e07619, #e17e1f, #e18626, #df8e31, #dd963c, #db9e47, #daa552);
+$gradient-sun-light: linear-gradient(to right, #ff7d4e, #ff8852, #ff9357, #ff9e5e, #ffa865, #ffb06c, #ffb874, #ffbf7c, #ffc685, #ffcd8f, #ffd499, #ffdba3);
+$gradient-sun-very-light: linear-gradient(to right, #fd9974, #fda177, #fda97a, #fdb07e, #fdb883, #fdbe89, #fdc590, #fdcb97, #fdd2a0, #fed9aa, #fedfb5, #ffe6bf);
+$gradient-moon: linear-gradient(to right, #4e4b4a, #595655, #656260, #706d6b, #7c7977, #858280, #8e8b8a, #979493, #9f9c9c, #a7a5a4, #afadad, #b7b6b6);
+$gradient-moon-crater: radial-gradient(circle, #b7b6b6, #afadad, #a7a5a4, #9f9c9c, #979493, #8e8b8a, #858280, #7c7977, #706d6b, #656260, #595655, #4e4b4a);
+$gradient-moon-crater2: linear-gradient(to right top, #b7b6b6, #afadad, #a7a5a4, #9f9c9c, #979493, #8e8b8a, #858280, #7c7977, #706d6b, #656260, #595655, #4e4b4a);
 
 //^ GUTTER-SIZES
 $gutter-very-small: 0.25rem;

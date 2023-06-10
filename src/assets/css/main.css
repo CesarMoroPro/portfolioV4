@@ -112,6 +112,7 @@
   align-items: center;
 }
 .body .general-header__highline__nav__links__link {
+  z-index: 1;
   color: #E47A18;
   font-size: 1rem;
   text-decoration: underline;
@@ -321,6 +322,68 @@
 }
 .body .footer .footer-link:hover {
   text-decoration: none;
+}
+
+.body .general-darkmode__darkmode-container {
+  width: 20px;
+  height: 40px;
+  border: solid 1px #DAA552;
+  border-radius: 16px;
+  position: fixed;
+  top: 3%;
+  left: 10px;
+}
+.body .general-darkmode__darkmode-container__darkmode-not-active-button {
+  width: 20px;
+  height: 20px;
+  border-radius: 16px;
+  background-image: linear-gradient(to right, #ff7d4e, #ff8852, #ff9357, #ff9e5e, #ffa865, #ffb06c, #ffb874, #ffbf7c, #ffc685, #ffcd8f, #ffd499, #ffdba3);
+  position: relative;
+  top: 0;
+}
+.body .general-darkmode__darkmode-container__darkmode-active-button {
+  background-image: linear-gradient(to right, #4e4b4a, #595655, #656260, #706d6b, #7c7977, #858280, #8e8b8a, #979493, #9f9c9c, #a7a5a4, #afadad, #b7b6b6);
+  top: 50%;
+}
+.body .general-darkmode__darkmode-container__darkmode-active-button__crater-1 {
+  width: 9.5px;
+  height: 9.5px;
+  border-radius: 30px;
+  box-shadow: -1.5px 1.5px 1px #4E4B4A;
+  background-image: radial-gradient(circle, #b7b6b6, #afadad, #a7a5a4, #9f9c9c, #979493, #8e8b8a, #858280, #7c7977, #706d6b, #656260, #595655, #4e4b4a);
+  position: relative;
+  top: 1.5px;
+  left: 8px;
+}
+.body .general-darkmode__darkmode-container__darkmode-active-button__crater-2 {
+  width: 2.5px;
+  height: 2.5px;
+  border-radius: 30px;
+  box-shadow: -1.5px 1.5px 1px #4E4B4A;
+  background-image: radial-gradient(circle, #b7b6b6, #afadad, #a7a5a4, #9f9c9c, #979493, #8e8b8a, #858280, #7c7977, #706d6b, #656260, #595655, #4e4b4a);
+  position: relative;
+  top: -8.5px;
+  left: 5px;
+}
+.body .general-darkmode__darkmode-container__darkmode-active-button__crater-3 {
+  width: 4px;
+  height: 4px;
+  border-radius: 30px;
+  box-shadow: -1px 1px 1px #4E4B4A;
+  background-image: radial-gradient(circle, #b7b6b6, #afadad, #a7a5a4, #9f9c9c, #979493, #8e8b8a, #858280, #7c7977, #706d6b, #656260, #595655, #4e4b4a);
+  position: relative;
+  top: -2px;
+  left: 2px;
+}
+.body .general-darkmode__darkmode-container__darkmode-active-button__crater-4 {
+  width: 5.5px;
+  height: 5.5px;
+  border-radius: 30px;
+  box-shadow: -1.5px 1px 1px #4E4B4A;
+  background-image: radial-gradient(circle, #b7b6b6, #afadad, #a7a5a4, #9f9c9c, #979493, #8e8b8a, #858280, #7c7977, #706d6b, #656260, #595655, #4e4b4a);
+  position: relative;
+  top: -3px;
+  left: 9px;
 }
 
 .body .aside-social-icons {

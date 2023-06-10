@@ -25,6 +25,7 @@
                                         align-items: center;
                                         
                                         &__link {
+                                                z-index: 1;
                                                 color: $orange-light;
                                                 font-size: $font-size-regular;
                                                 text-decoration: underline;
@@ -57,7 +58,7 @@
                         &__sun-moon {
                                 height: 180px;
                                 width: 180px;
-                                background-image: $gradient-sunshine;
+                                background-image: $gradient-sun;
                                 border-radius: 180px;
                                 position: absolute;
                                 top: 30px;

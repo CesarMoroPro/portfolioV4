@@ -15,10 +15,6 @@
 - Mutualiser la fonction qui ouvre / ferme les skills simultanément
 
 
-## Section Projects
-- Filtres
-
-
 ## Section Contact
 - Ajouter photo
 
