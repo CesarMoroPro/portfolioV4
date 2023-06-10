@@ -265,6 +265,10 @@
                                         cursor: pointer;
                                         margin: 0 $gutter-small;
                                         text-align: center;
+
+                                        &__number {
+                                                text-decoration: none;
+                                        }
                                 }
                         }
 

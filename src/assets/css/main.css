@@ -536,6 +536,9 @@
   margin: 0 0.5rem;
   text-align: center;
 }
+.body .general-section .general-filters__all-filters__one-filter__number {
+  text-decoration: none;
+}
 .body .general-section .general-filters__deselect-all {
   font-size: 0.75rem;
   cursor: pointer;

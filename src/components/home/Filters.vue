@@ -7,7 +7,7 @@
                         v-for="(filter, index) in filtersList"
                         :class="{ 'not-selected-filter' : !filter.isFilterSelected, 'selected-filter' : filter.isFilterSelected }"
                         @click="clickedFilter(index)">
-                                {{ filter.finition.toUpperCase() }}
+                                {{ filter.finition.toUpperCase() }}<span class="general-filters__all-filters__one-filter__number" v-show="filter.quantity">&nbsp;({{ filter.quantity  }})</span>
                         </div>
                 </div>
 
@@ -25,18 +25,22 @@ export default {
                                 {
                                         finition: "front-end",
                                         isFilterSelected: true,
+                                        quantity: null,
                                 },
                                 {
                                         finition: "back-end",
                                         isFilterSelected: true,
+                                        quantity: null,
                                 },
                                 {
                                         finition: "fullstack",
                                         isFilterSelected: true,
+                                        quantity: null,
                                 },
                                 {
                                         finition: "no code",
                                         isFilterSelected: true,
+                                        quantity: null,
                                 },
                         ]
                 }
@@ -95,6 +99,22 @@ export default {
                 projectsList: {
                         type: Array,
                 }
+        },
+
+        mounted() {
+                window.addEventListener('load', () => {
+                        /* Je récupère tous les projets pour avoir accès à leur finition respective */
+                        const finitionOfAllProjects = this.projectsList.forEach(project => {
+                                /* Je récupère tous les filtres pour avoir accès à leur finition respective et leur quantité respective */
+                                this.filtersList.forEach(filter => {
+                                        /* Si la finition d'un projet vaut la finition d'un filtre */
+                                        if (project.finition === filter.finition) {
+                                                /* Alors j'incrémente de 1 la proprété "quantity" du filtre concerné */
+                                                filter.quantity += 1;
+                                        }
+                                })
+                        })
+                })
         }
 }
 
