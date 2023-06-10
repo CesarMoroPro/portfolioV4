@@ -67,7 +67,7 @@ Le build de Vite ne sait pas forcément prendre tous les assets pour les inclure
 En faisant un import des images, le build se fait correctement.
 https://cloudinary.com/blog/handle-image-asset-bundling-using-vite-in-vuejs
 */
-// import imgPortfolioV4 from "../assets/img/miniatures-projets/portfolioV4";
+import imgPortfolioV4 from "../../assets/img/miniatures-projets/portfolioV4/portfolioV4.png";
 import imgHelloMacros from "../../assets/img/miniatures-projets/hello-macros/hello-macros.png";
 import imgPortfolioV3 from "../../assets/img/miniatures-projets/portfolioV3/portfolioV3.png";
 import imgTodoList from "../../assets/img/miniatures-projets/todo-list/todo-list.png";
@@ -89,6 +89,27 @@ export default {
                         /* Projects data */
                         /* Attention : pour les propriétés "excerpt", se limiter à 360 caractères */
                         projectsList: [
+
+                                /* Portfolio V4 */
+                                {
+                                        isCardHovered: false,
+                                        title: "Mon Portfolio V4",
+                                        date: "10/06/2023",
+                                        image: imgPortfolioV4,
+                                        technos: [
+                                                "Html", "Scss", "Vue3.js", "Vite.js", "Git", "Responsive",
+                                        ],
+                                        finition: "front-end",
+                                        displayProject: true, /* à TRUE par défaut, puis sa valeur dépendra des filtres via les props */
+                                        excerpt: "C'est ici mon portfolio actuel, sur lequel vous vous trouvez. Un back-end Node.js est prévu dans les semaines à venir",
+                                        projectOnLine: true,
+                                        linkProject: "https://cesar-moro.fr",
+                                        githubLink: "https://github.com/CesarMoroPro/portfolioV4",
+                                        githubIcon: true,
+                                        youtubeLink: "",
+                                        youtubeIcon: false,
+                                        wordpressIcon: false,
+                                },
 
                                 /* Hello Macros */
                                 {
