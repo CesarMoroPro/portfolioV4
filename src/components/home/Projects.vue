@@ -1,20 +1,20 @@
 <template>
         <section class="general-projects">
                 <h2 id="projects" class="general-h2" @click="openSection">
-                <div v-if="!isProjectsSectionOpen">
-                        <font-awesome-icon class="title-icon" :icon="['fas', 'laptop-code']" />Projets - Projects<font-awesome-icon class="chevron-down-icon" :icon="['fas', 'chevron-down']" />
-                </div>
+                        <div v-if="!isProjectsSectionOpen">
+                                <font-awesome-icon class="title-icon" :icon="['fas', 'laptop-code']" />Projets - Projects<font-awesome-icon class="chevron-down-icon" :icon="['fas', 'chevron-down']" />
+                        </div>
                 <div v-else>
                         <font-awesome-icon class="title-icon" :icon="['fas', 'laptop-code']" />Projets - Projects<font-awesome-icon class="cross-icon" :icon="['fas', 'xmark']" />
                 </div>
-                </h2>
+        </h2>
 
                 <section class="general-projects__all-projects" v-show="isProjectsSectionOpen">
-                        <FiltersComponent></FiltersComponent>
+                        <FiltersComponent :projectsList="projectsList"></FiltersComponent>
 
-                        <div class="general-projects__all-projects__no-up-chevron">
+                        <div class="general-projects__all-projects__no-up-chevron" v-for="(project, index) in projectsList" :key="index">
                                 
-                                <div class="general-projects__all-projects__one-project" v-for="(project, index) in projectsList" :key="index" @mouseover="cardHovered(index)" @mouseout="cardNotHovered(index)">
+                                <div class="general-projects__all-projects__one-project"  @mouseover="cardHovered(index)" @mouseout="cardNotHovered(index)" v-show="project.displayProject">
                                         
                                         <!--^ CARTE NON SURVOLÉE  -->
                                         <div class="general-projects__all-projects__one-project__normal-display" v-show="!project.isCardHovered">
@@ -100,6 +100,7 @@ export default {
                                                 "Html", "Scss", "Vue3.js", "Vite.js", "Git", "Responsive",
                                         ],
                                         finition: "front-end",
+                                        displayProject: true, /* à TRUE par défaut, puis sa valeur dépendra des filtres via les props */
                                         excerpt: "Ce projet est un calculateur de macros-nutriments, fonctionnel et basé sur de vraies formules scientifiques. Un Back-end en Node.js avec consommation d'API est en cours de développement.",
                                         projectOnLine: true,
                                         linkProject: "https://hello-macros.cesar-moro.fr",
@@ -120,6 +121,7 @@ export default {
                                                 "Html", "Scss", "Vue.js 3", "Responsive",
                                         ],
                                         finition: "front-end",
+                                        displayProject: true,
                                         excerpt: "Ce projet est mon portfolio Version 3. La V4.0 étant maintenant déployée, cette V3.0. statique reste consultable mais n'est plus maintenue.",
                                         projectOnLine: true,
                                         linkProject: "https://cesar-moro.fr",
@@ -141,6 +143,7 @@ export default {
                                                 "Html", "Scss", "JavaScript"
                                         ],
                                         finition: "front-end",
+                                        displayProject: true,
                                         excerpt: "Traditionnel projet pour tout développeur junior, je n'ai pu y échapper. Alors, je me suis laissé aller sur le style. Une version Full avec un back-end géré en Node.js arrivera dans une version ultérieure.",
                                         projectOnLine: true,
                                         linkProject: "https://todo-list.cesar-moro.fr",
@@ -161,7 +164,8 @@ export default {
                                         technos: [
                                                 "WordPress (NoCode, DIVI)",
                                         ],
-                                        finition: "fullstack",
+                                        finition: "no code",
+                                        displayProject: true,
                                         excerpt: "Projet de site vitrine réalisé pour une rédactrice web, avec le CMS WordPress et le thème DIVI (en no-code).",
                                         projectOnLine: true,
                                         linkProject: "https://acmweb.fr",
@@ -182,6 +186,7 @@ export default {
                                                 "html", "Scss", " Vanilla JavaScript"
                                         ],
                                         finition: "front-end",
+                                        displayProject: true,
                                         excerpt: "Projet réalisé en Vanilla JavaScript, dont l'objectif était de développer la programmation fonctionnelle. Ce mini-jeu nécessite une version 1.2 afin de corriger quelques petits bugs. Projet non-responsive, je vous conseille de l'essayer sur ordinateur. ⚠️ ATTENTION : le repo Github n'est pas à jour suite à de nombreuses mauvaises manipulations.",
                                         projectOnLine: true,
                                         linkProject: "https://free-ocean.cesar-moro.fr",
@@ -203,6 +208,7 @@ export default {
                                                 "Html", "Scss", "JavaScript", "PHP", "SQL", "WordPress (code)",
                                         ],
                                         finition: "fullstack",
+                                        displayProject: true,
                                         excerpt: "Projet de fin de formation réalisé en pair-programming, en conditions réelles de travail en entreprise. Formation Développeur Web et Web Mobile de 6 mois, au sein de l'école O'clock. Ce projet n'a pas été déployé, seule la vidéo de présentation est disponible. N'ayant pas été le LeadDev sur ce projet, je n'ai pas accès au repo Github.",
                                         projectOnLine: false,
                                         linkProject: "https://www.youtube.com/live/Gbczg095K_A?feature=share&t=3775",
@@ -240,7 +246,7 @@ export default {
         components: {
                 FiltersComponent,
                 UpChevronComponent,
-        }
+        },
 }
 
 </script>
