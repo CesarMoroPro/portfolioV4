@@ -133,31 +133,31 @@ export default {
                                 },
 
                                 /* Portfolio V3*/
-                                {
-                                        isCardHovered: false,
-                                        title: "Mon Portfolio V3",
-                                        date: "23/03/2023",
-                                        image: imgPortfolioV3,
-                                        technos: [
-                                                "Html", "Scss", "Vue.js 3", "Responsive",
-                                        ],
-                                        finition: "front-end",
-                                        displayProject: true,
-                                        excerpt: "Ce projet est mon portfolio Version 3. La V4.0 étant maintenant déployée, cette V3.0. statique reste consultable mais n'est plus maintenue.",
-                                        projectOnLine: true,
-                                        linkProject: "https://portfolioV3.cesar-moro.fr",
-                                        githubLink: "https://github.com/CesarMoroPro/portfolio-Vue.js",
-                                        githubIcon: true,
-                                        youtubeLink: "",
-                                        youtubeIcon: false,
-                                        wordpressIcon: false,
+                                // {
+                                //         isCardHovered: false,
+                                //         title: "Mon Portfolio V3",
+                                //         date: "23/03/2023",
+                                //         image: imgPortfolioV3,
+                                //         technos: [
+                                //                 "Html", "Scss", "Vue.js 3", "Responsive",
+                                //         ],
+                                //         finition: "front-end",
+                                //         displayProject: true,
+                                //         excerpt: "Ce projet est mon portfolio Version 3. La V4.0 étant maintenant déployée, cette V3.0. statique reste consultable mais n'est plus maintenue.",
+                                //         projectOnLine: true,
+                                //         linkProject: "https://portfolioV3.cesar-moro.fr",
+                                //         githubLink: "https://github.com/CesarMoroPro/portfolio-Vue.js",
+                                //         githubIcon: true,
+                                //         youtubeLink: "",
+                                //         youtubeIcon: false,
+                                //         wordpressIcon: false,
 
-                                },
+                                // },
 
                                 /* Todo-List */
                                 {
                                         isCardHovered: false,
-                                        title: "Todo List",
+                                        title: "To-do List",
                                         date: "28/02/2023",
                                         image: imgTodoList,
                                         technos: [
@@ -165,7 +165,7 @@ export default {
                                         ],
                                         finition: "front-end",
                                         displayProject: true,
-                                        excerpt: "Traditionnel projet pour tout développeur junior, je n'ai pu y échapper. Alors, je me suis laissé aller sur le style. Une version Full avec un back-end géré en Node.js arrivera dans une version ultérieure.",
+                                        excerpt: "Traditionnel projet pour tout développeur junior, je me suis laissé aller sur le style. Une version Full avec un back-end géré en Node.js arrivera dans une version ultérieure.",
                                         projectOnLine: true,
                                         linkProject: "https://todo-list.cesar-moro.fr",
                                         githubLink: "https://github.com/CesarMoroPro/todo-list-js",

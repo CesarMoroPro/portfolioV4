@@ -82,12 +82,16 @@
 }
 .body .link-background-orange {
   background-image: linear-gradient(to right, #d2420f, #d64e0f, #d9590f, #dd6311, #e06d13, #e07619, #e17e1f, #e18626, #df8e31, #dd963c, #db9e47, #daa552);
+  padding: 0 0.25rem;
 }
 .body .link-background-orange:hover {
   background-image: none;
 }
 .body .underline-orange {
   text-decoration: underline #E47A18;
+}
+.body .english {
+  font-style: italic;
 }
 
 .body .general-header__highline {
@@ -453,7 +457,7 @@
   margin-right: 1rem;
 }
 .body .general-section .general-about__texts .french-bio {
-  margin-bottom: 2.5rem;
+  margin-bottom: 3.75rem;
 }
 .body .general-section .general-about__texts .general-texts {
   line-height: 1.5rem;

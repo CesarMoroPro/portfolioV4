@@ -17,16 +17,11 @@ export default {
         data() {
                 return {
                         softskillsList: [ 
-                                "Culture de l'apprentissage",
-                                "Curiosté",
-                                "Esprit d'analyse",
-                                "Esprit critique",
-                                "Patience",
-                                "Prise de recul",
-                                "Esprit d'équipe",
-                                "Empathie",
-                                "Humilité",
-                                "Remise en question",
+                                "Culture de l'apprentissage & curiosité",
+                                "Communication",
+                                "Esprit d'équipe & Autonomie",
+                                "Rigueur & Organisation",
+                                "Capacité d'adaptation & Persévérance",
                                 "Pair-programming",
                         ]
                 }

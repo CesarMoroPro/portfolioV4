@@ -20,6 +20,7 @@
         
         .link-background-orange {
                 background-image: $gradient-sun;
+                padding: 0 $gutter-very-small;
         }
 
         .link-background-orange:hover {
@@ -28,6 +29,10 @@
 
         .underline-orange {
                 text-decoration: underline $orange-light;
+        }
+
+        .english {
+                font-style: italic;
         }
         
 }

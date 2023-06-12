@@ -11,15 +11,15 @@
 
                 <div class="general-about__texts" v-show="isAboutSectionOpen">
                         <div class="french-bio">
-                                <p class="general-texts"><span class="flags">🇫🇷 </span>Issu d'une reconversion professionnelle en télé-présentiel avec l'&nbsp;<a href="https://oclock.io/" target="blank" class="link-white link-background-orange">École O'clock</a> (Paris), je suis dès maintenant disponible pour mettre mes compétences à votre profit.</p>
-                                <p class="general-texts">En plus des compétences techniques acquises lors de cette <a href="https://oclock.io/formations/developpeur-web" target="blank" class="link-white link-background-orange">formation</a>, j'y ai appris "comment apprendre" et je prends du plaisir à continuer de progresser.</p>
-                                <p class="general-texts underline-orange">Alors ensemble, aidons-nous à grandir et à évoluer !</p>
+                                <p class="general-texts">Issu d'une reconversion professionnelle en télé-présentiel avec l'&nbsp;<a href="https://oclock.io/" target="blank" class="link-white link-background-orange">École O'clock</a> (Paris), je suis disponible et motivé pour mettre mes compétences et qualités à votre profit.</p>
+                                <p class="general-texts">En plus de mon expérience acquise lors de cette <a href="https://oclock.io/formations/developpeur-web" target="blank" class="link-white link-background-orange">formation</a>, j'ai appris le "comment apprendre" et je prends beaucoup de plaisir à me perfectionner.</p>
+                                <p class="general-texts underline-orange">Ensemble, aidons-nous à grandir et à évoluer !</p>
                         </div>
 
-                        <div class="english-bio">
-                                <p class="general-texts"><span class="flags">🇬🇧</span> After a "new professionnal life" program to be a web developer, with <a href="https://oclock.io/" target="blank" class="link-white link-background-orange">O'clock School</a> (Paris), I am available right now to put my skills to your benefit.</p>
-                                <p class="general-texts">In addition to the technical skills acquired during this <a href="https://oclock.io/formations/developpeur-web" target="blank" class="link-white link-background-orange">program</a>, I learned "how to learn", and now I enjoy discovering new things every day.</p>
-                                <p class="general-texts underline-orange">So, help us each other grow and evolve together !</p>
+                        <div class="english-bio english">
+                                        <p class="general-texts">In order to pursue my dream, I chose a professional retrainging with <a href="https://oclock.io/" target="blank" class="link-white link-background-orange">O'clock School</a> (Paris) to be a web developer.</p>
+                                        <p class="general-texts">Thrilled about building strong relationships and providing the best service, I am available right away. I am also motivated and eager to learn.</p>
+                                        <p class="general-texts underline-orange">Let's help each other grow and evolve together !</p>
                         </div>
 
                         <a href="http://localhost:5173/#about"><UpChevronComponent></UpChevronComponent></a>
