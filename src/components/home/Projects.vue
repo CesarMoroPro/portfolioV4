@@ -101,7 +101,7 @@ export default {
                                         ],
                                         finition: "front-end",
                                         displayProject: true, /* à TRUE par défaut, puis sa valeur dépendra des filtres via les props */
-                                        excerpt: "C'est ici mon portfolio actuel, sur lequel vous vous trouvez. Un back-end Node.js est prévu dans les semaines à venir",
+                                        excerpt: "Ce projet est mon portfolio actuel, sur lequel vous vous trouvez. Un back-end Node.js est prévu dans les semaines à venir.",
                                         projectOnLine: true,
                                         linkProject: "https://cesar-moro.fr",
                                         githubLink: "https://github.com/CesarMoroPro/portfolioV4",
@@ -145,7 +145,7 @@ export default {
                                         displayProject: true,
                                         excerpt: "Ce projet est mon portfolio Version 3. La V4.0 étant maintenant déployée, cette V3.0. statique reste consultable mais n'est plus maintenue.",
                                         projectOnLine: true,
-                                        linkProject: "https://cesar-moro.fr",
+                                        linkProject: "https://portfolioV3.cesar-moro.fr",
                                         githubLink: "https://github.com/CesarMoroPro/portfolio-Vue.js",
                                         githubIcon: true,
                                         youtubeLink: "",
