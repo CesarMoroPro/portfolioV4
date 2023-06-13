@@ -682,6 +682,9 @@
     animation: jumpTheUpChevron 0.5s alternate;
     animation-iteration-count: 10;
   }
+  .body .general-section .general-skills__all-skills {
+    min-width: 400px;
+  }
   .body .general-section .general-projects__all-projects__one-project__normal-display {
     width: 500px;
   }
