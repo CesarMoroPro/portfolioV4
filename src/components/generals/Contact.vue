@@ -20,7 +20,7 @@
                                 <div class="general-contact__contact-device__info-text">cesar.moro.dev@gmail.com</div>
                         </div>
 
-                        <a href="http://localhost:5173/#skills"><UpChevronComponent></UpChevronComponent></a>
+                        <a href="https://cesar-moro.fr/#skills"><UpChevronComponent></UpChevronComponent></a>
                 </div>
         </section>
 </template>

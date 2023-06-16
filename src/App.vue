@@ -16,7 +16,6 @@
 
         <SeparatorHorizontal></SeparatorHorizontal>
         <FooterComponent></FooterComponent>
-
 </template>
 
 <script>

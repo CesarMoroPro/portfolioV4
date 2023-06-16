@@ -449,8 +449,9 @@
 }
 .body .general-section .general-up-chevron__container-up-chevron-icon__chevron-up-icon {
   color: #ffffff;
-  animation: jumpTheUpChevron 0.5s alternate;
-  animation-iteration-count: 10;
+}
+.body .general-section .general-up-chevron__container-up-chevron-icon__chevron-up-icon:hover {
+  animation: jumpTheUpChevron 0.5s alternate infinite;
 }
 .body .general-section .general-about__texts {
   margin-left: 2rem;

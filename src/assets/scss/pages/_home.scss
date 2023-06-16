@@ -70,9 +70,10 @@
                                 
                                 &__chevron-up-icon {
                                         color: $pur-white;
+                                }
 
-                                        animation: jumpTheUpChevron 0.5s alternate;
-                                        animation-iteration-count: 10;
+                                &__chevron-up-icon:hover {
+                                        animation: jumpTheUpChevron 0.5s alternate infinite;
                                 }
                         }
                 }

@@ -22,7 +22,7 @@
                                         <p class="general-texts underline-orange">Let's help each other grow and evolve together !</p>
                         </div>
 
-                        <a href="http://localhost:5173/#about"><UpChevronComponent></UpChevronComponent></a>
+                        <a href="https://cesar-moro.fr/#about"><UpChevronComponent></UpChevronComponent></a>
                 </div>
 
         </section>

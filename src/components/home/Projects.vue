@@ -54,7 +54,7 @@
                         </div>
                         
 
-                        <a href="http://localhost:5173/#projects"><UpChevronComponent></UpChevronComponent></a>
+                        <a href="https://cesar-moro.fr/#projects"><UpChevronComponent></UpChevronComponent></a>
                 </section>
 
         </section>
