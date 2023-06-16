@@ -16,7 +16,7 @@
                                <SoftskillsComponent></SoftskillsComponent>
                        </div>
 
-                        <a href="http://localhost:5173/#skills"><UpChevronComponent></UpChevronComponent></a>
+                        <a href="https://cesar-moro.fr/#skills"><UpChevronComponent></UpChevronComponent></a>
                 </div>
         </section>
 </template>

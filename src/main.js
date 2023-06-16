@@ -4,6 +4,9 @@ import { createApp } from 'vue'
 //? 02 - Import du Root Component */
 import App from './App.vue'
 
+//= 07 Import du router
+import router from './router';
+
 //^ 05 - Import de librairies tierces
 // Import de reset.css
 import 'reset.css';
@@ -25,6 +28,10 @@ createApp(App)
 
 //^ 06 - J'ajoute les composants globaux nécessaires
 .component('font-awesome-icon', FontAwesomeIcon)
+
+//= 08 - Appel de .use(router)
+.use(router)
+
 
 //? 04 - Puis montage de l'application */
 .mount('#app')
