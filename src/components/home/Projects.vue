@@ -97,7 +97,7 @@ export default {
                                         date: "10/06/2023",
                                         image: imgPortfolioV4,
                                         technos: [
-                                                "Html", "Scss", "Vue3.js", "Vite.js", "Git", "Responsive",
+                                                "Html", "Scss", "Vue3.js", "VueRouter", "Vite.js", "Git", "Responsive",
                                         ],
                                         finition: "front-end",
                                         displayProject: true, /* à TRUE par défaut, puis sa valeur dépendra des filtres via les props */
