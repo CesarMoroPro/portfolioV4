@@ -5,17 +5,7 @@
                                 <span class="id-name">César MORO</span>
                         </h1>
                         
-        
-                        <nav class="general-header__highline__nav">
-                                <!-- <div v-show="mediaQueryMobile" @click="toogleMenu">
-                                        <font-awesome-icon class="icon general-highline__nav__menu-icon" :icon="['fas', 'bars']" size="xl"/>
-                                </div> -->
-                                <div class="general-header__highline__nav__links">
-                                        <a href="https://cesar-moro.fr/#about" class="general-header__highline__nav__links__link">À propos - About</a>
-                                        <a href="https://cesar-moro.fr/#skills" class="general-header__highline__nav__links__link">Compétences - Skills</a>
-                                        <a href="https://cesar-moro.fr/#projects" class="general-header__highline__nav__links__link">Projets - Projects</a>
-                                </div>
-                        </nav>
+                        <TheNavigationComponent />
                 </div>
 
                 <div class="general-header__logo">
@@ -45,6 +35,9 @@ alors qu'en les ajoutant directement dans l'attribut en html, elles se seront pa
 import montainLogo from '../../assets/img/illustrations/logo-montagne-nobg.png';
 import parapenteLogo from '../../assets/img/illustrations/logo-parapente-nobg.png';
 
+// Import de SFC
+import TheNavigationComponent from '../navigation/TheNavigation.vue';
+
 export default {
         data() {
                 return {
@@ -54,6 +47,9 @@ export default {
                         /* Autres data */
                 }
         },
+        components: {
+                TheNavigationComponent,
+        }
 }
 
 </script>

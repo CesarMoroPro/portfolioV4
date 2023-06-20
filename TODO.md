@@ -8,11 +8,9 @@
 
 
 ## Section About
-- Retoucher les textes en Anglais
 
 
 ## Section Skills
-- Mutualiser la fonction qui ouvre / ferme les skills simultanément
 
 
 ## Section Contact
@@ -22,3 +20,5 @@
 
 
 # COMMIT :
+- Création du SFC not Found
+- Création du VueRouter
