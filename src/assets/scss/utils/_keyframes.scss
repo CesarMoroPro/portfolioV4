@@ -47,6 +47,24 @@
         }
 }
 
+@keyframes fallingParapentistSmall {
+        100% {
+                top: 315px;
+        }
+}
+
+@keyframes fallingParapentistTablet {
+        100% {
+                top: 355px;
+        }
+}
+
+@keyframes fallingParapentistDesktop {
+        100% {
+                top: 355px;
+        }
+}
+
 //^ ANIMATIONS DES SÉPARATEURS
 @keyframes separatorHorizontal {
         from {

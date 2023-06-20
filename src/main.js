@@ -5,7 +5,7 @@ import { createApp } from 'vue'
 import App from './App.vue'
 
 //= 07 Import du router
-import router from './router';
+import router from './router/router-index.js';
 
 //^ 05 - Import de librairies tierces
 // Import de reset.css

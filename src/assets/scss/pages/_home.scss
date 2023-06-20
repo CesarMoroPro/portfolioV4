@@ -70,9 +70,6 @@
                                 
                                 &__chevron-up-icon {
                                         color: $pur-white;
-                                }
-
-                                &__chevron-up-icon:hover {
                                         animation: jumpTheUpChevron 0.5s alternate infinite;
                                 }
                         }
@@ -386,12 +383,10 @@
                                         align-items: center;
                                         
                                         &__chevron-up-icon {
-                                                color: $pur-white;
                                                 font-size: $font-size-large;
-        
-                                                animation: jumpTheUpChevron 0.5s alternate;
-                                                animation-iteration-count: 10;
                                         }
+                                        
+
                                 }
                         }
 

@@ -43,6 +43,21 @@
     left: 155px;
   }
 }
+@keyframes fallingParapentistSmall {
+  100% {
+    top: 315px;
+  }
+}
+@keyframes fallingParapentistTablet {
+  100% {
+    top: 355px;
+  }
+}
+@keyframes fallingParapentistDesktop {
+  100% {
+    top: 355px;
+  }
+}
 @keyframes separatorHorizontal {
   from {
     opacity: 0;
@@ -126,7 +141,7 @@
 .body .general-header__highline__nav__links__link:hover {
   color: #DAA552;
 }
-.body .general-header__logo { /* Le parapente vole 5secondes dès le chargement de la page */
+.body .general-header__logo { /* Le parapente vole 5 secondes dès le chargement de la page */
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -449,8 +464,6 @@
 }
 .body .general-section .general-up-chevron__container-up-chevron-icon__chevron-up-icon {
   color: #ffffff;
-}
-.body .general-section .general-up-chevron__container-up-chevron-icon__chevron-up-icon:hover {
   animation: jumpTheUpChevron 0.5s alternate infinite;
 }
 .body .general-section .general-about__texts {
@@ -678,10 +691,7 @@
     align-items: center;
   }
   .body .general-section .general-up-chevron__container-up-chevron-icon__chevron-up-icon {
-    color: #ffffff;
     font-size: 1.25rem;
-    animation: jumpTheUpChevron 0.5s alternate;
-    animation-iteration-count: 10;
   }
   .body .general-section .general-skills__all-skills {
     min-width: 400px;
@@ -781,6 +791,41 @@
 @media all and (min-width: 768px) {
   .general-separator .separator-horizontal {
     margin-top: 2.5rem;
+  }
+}
+.body .general-not-found {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.body .general-not-found__404-title {
+  text-align: center;
+  color: #DAA552;
+  font-weight: bold;
+  font-size: 1.25rem;
+  line-height: 2.5rem;
+}
+.body .general-not-found .parapente-failed {
+  z-index: 2;
+  animation: fallingParapentistSmall 0.5s 0.5s linear forwards;
+}
+.body .general-not-found__link {
+  z-index: 1;
+  color: #E47A18;
+  font-size: 1rem;
+  text-decoration: underline;
+  cursor: pointer;
+  margin: 0.25rem 0;
+}
+.body .general-not-found__link:hover {
+  color: #DAA552;
+}
+
+@media all and (min-width: 768px) {
+  .body .general-not-found .parapente-failed {
+    z-index: 2;
+    animation: fallingParapentistTablet 0.5s 0.5s linear forwards;
   }
 }
 

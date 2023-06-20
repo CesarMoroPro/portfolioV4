@@ -9,7 +9,6 @@
 
 
 ## Section Skills
-- Mutualiser la fonction qui ouvre / ferme les skills simultanément
 
 
 ## Section projects
@@ -24,3 +23,5 @@
 
 
 # COMMIT :
+- Création du SFC not Found
+- Création du VueRouter

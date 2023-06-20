@@ -43,7 +43,7 @@ export default {
 
                                 {
                                         id: "",
-                                        name: "API",
+                                        name: "REST API, Postman / Insomnia",
                                 },
 
                                 {

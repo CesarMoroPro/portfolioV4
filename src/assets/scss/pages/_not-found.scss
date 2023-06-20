@@ -1,0 +1,48 @@
+.body {
+
+        .general-not-found {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+                &__404-title {
+                        text-align: center;
+                        color: $gold;
+                        font-weight: bold;
+                        font-size: $font-size-large;
+                        line-height: $gutter-extra-large;
+                }
+
+                .parapente-failed {
+                        z-index: 2;
+                        animation: fallingParapentistSmall 0.5s 0.5s linear forwards;
+                }
+
+                &__link {
+                        z-index: 1;
+                        color: $orange-light;
+                        font-size: $font-size-regular;
+                        text-decoration: underline;
+                        cursor: pointer;
+                        margin: $gutter-very-small 0;
+                }
+
+                &__link:hover {
+                        color: $gold;
+                }
+        }
+}
+
+@media all and (min-width:($mobile-max + 1)) {
+        .body {
+
+                .general-not-found {
+
+                        .parapente-failed {
+                                z-index: 2;
+                                animation: fallingParapentistTablet 0.5s 0.5s linear forwards;
+                        }
+                }
+        }
+}
